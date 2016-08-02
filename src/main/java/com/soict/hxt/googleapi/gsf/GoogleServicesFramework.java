@@ -10,432 +10,906 @@ public final class GoogleServicesFramework {
   }
   public interface LoginRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string packetid = 1;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string domain = 2;
+    /**
+     * <code>optional string domain = 2;</code>
+     */
     boolean hasDomain();
-    String getDomain();
-    
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    java.lang.String getDomain();
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDomainBytes();
+
     // optional string user = 3;
+    /**
+     * <code>optional string user = 3;</code>
+     */
     boolean hasUser();
-    String getUser();
-    
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    java.lang.String getUser();
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getUserBytes();
+
     // optional string resource = 4;
+    /**
+     * <code>optional string resource = 4;</code>
+     */
     boolean hasResource();
-    String getResource();
-    
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    java.lang.String getResource();
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getResourceBytes();
+
     // optional string token = 5;
+    /**
+     * <code>optional string token = 5;</code>
+     */
     boolean hasToken();
-    String getToken();
-    
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    java.lang.String getToken();
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getTokenBytes();
+
     // optional string deviceid = 6;
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
     boolean hasDeviceid();
-    String getDeviceid();
-    
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
+    java.lang.String getDeviceid();
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceidBytes();
+
     // optional int64 lastrmqid = 7;
+    /**
+     * <code>optional int64 lastrmqid = 7;</code>
+     */
     boolean hasLastrmqid();
+    /**
+     * <code>optional int64 lastrmqid = 7;</code>
+     */
     long getLastrmqid();
-    
+
     // repeated .Setting settings = 8;
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> 
         getSettingsList();
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index);
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     int getSettingsCount();
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
         getSettingsOrBuilderList();
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
         int index);
-    
+
     // optional int32 compress = 9;
+    /**
+     * <code>optional int32 compress = 9;</code>
+     */
     boolean hasCompress();
+    /**
+     * <code>optional int32 compress = 9;</code>
+     */
     int getCompress();
-    
+
     // repeated string persistentids = 10;
-    java.util.List<String> getPersistentidsList();
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    java.util.List<java.lang.String>
+    getPersistentidsList();
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
     int getPersistentidsCount();
-    String getPersistentids(int index);
-    
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    java.lang.String getPersistentids(int index);
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    com.google.protobuf.ByteString
+        getPersistentidsBytes(int index);
+
     // optional bool includestreamidinprotobuf = 11;
+    /**
+     * <code>optional bool includestreamidinprotobuf = 11;</code>
+     */
     boolean hasIncludestreamidinprotobuf();
+    /**
+     * <code>optional bool includestreamidinprotobuf = 11;</code>
+     */
     boolean getIncludestreamidinprotobuf();
-    
+
     // optional bool adaptiveheartbeat = 12;
+    /**
+     * <code>optional bool adaptiveheartbeat = 12;</code>
+     */
     boolean hasAdaptiveheartbeat();
+    /**
+     * <code>optional bool adaptiveheartbeat = 12;</code>
+     */
     boolean getAdaptiveheartbeat();
-    
+
     // optional .HeartBeatStat heartbeatstat = 13;
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     boolean hasHeartbeatstat();
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat getHeartbeatstat();
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder getHeartbeatstatOrBuilder();
-    
+
     // optional bool usermq2 = 14;
+    /**
+     * <code>optional bool usermq2 = 14;</code>
+     */
     boolean hasUsermq2();
+    /**
+     * <code>optional bool usermq2 = 14;</code>
+     */
     boolean getUsermq2();
-    
+
     // optional int64 accountid = 15;
+    /**
+     * <code>optional int64 accountid = 15;</code>
+     */
     boolean hasAccountid();
+    /**
+     * <code>optional int64 accountid = 15;</code>
+     */
     long getAccountid();
-    
+
     // optional int64 unknown1 = 16;
+    /**
+     * <code>optional int64 unknown1 = 16;</code>
+     */
     boolean hasUnknown1();
+    /**
+     * <code>optional int64 unknown1 = 16;</code>
+     */
     long getUnknown1();
-    
+
     // optional int32 networktype = 17;
+    /**
+     * <code>optional int32 networktype = 17;</code>
+     */
     boolean hasNetworktype();
+    /**
+     * <code>optional int32 networktype = 17;</code>
+     */
     int getNetworktype();
   }
+  /**
+   * Protobuf type {@code LoginRequest}
+   */
   public static final class LoginRequest extends
       com.google.protobuf.GeneratedMessage
       implements LoginRequestOrBuilder {
     // Use LoginRequest.newBuilder() to construct.
-    private LoginRequest(Builder builder) {
+    private LoginRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private LoginRequest(boolean noInit) {}
-    
+    private LoginRequest(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final LoginRequest defaultInstance;
     public static LoginRequest getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public LoginRequest getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private LoginRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              packetid_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              domain_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              user_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              resource_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              token_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              deviceid_ = input.readBytes();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              lastrmqid_ = input.readInt64();
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                settings_ = new java.util.ArrayList<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              settings_.add(input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.PARSER, extensionRegistry));
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000080;
+              compress_ = input.readInt32();
+              break;
+            }
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+                persistentids_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000200;
+              }
+              persistentids_.add(input.readBytes());
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000100;
+              includestreamidinprotobuf_ = input.readBool();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000200;
+              adaptiveheartbeat_ = input.readBool();
+              break;
+            }
+            case 106: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000400) == 0x00000400)) {
+                subBuilder = heartbeatstat_.toBuilder();
+              }
+              heartbeatstat_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(heartbeatstat_);
+                heartbeatstat_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000400;
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00000800;
+              usermq2_ = input.readBool();
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00001000;
+              accountid_ = input.readInt64();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00002000;
+              unknown1_ = input.readInt64();
+              break;
+            }
+            case 136: {
+              bitField0_ |= 0x00004000;
+              networktype_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
+        }
+        if (((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+          persistentids_ = new com.google.protobuf.UnmodifiableLazyStringList(persistentids_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<LoginRequest> PARSER =
+        new com.google.protobuf.AbstractParser<LoginRequest>() {
+      public LoginRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new LoginRequest(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<LoginRequest> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional string packetid = 1;
     public static final int PACKETID_FIELD_NUMBER = 1;
     private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     public boolean hasPacketid() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public String getPacketid() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public java.lang.String getPacketid() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           packetid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPacketidBytes() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         packetid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string domain = 2;
     public static final int DOMAIN_FIELD_NUMBER = 2;
     private java.lang.Object domain_;
+    /**
+     * <code>optional string domain = 2;</code>
+     */
     public boolean hasDomain() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getDomain() {
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    public java.lang.String getDomain() {
       java.lang.Object ref = domain_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           domain_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getDomainBytes() {
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDomainBytes() {
       java.lang.Object ref = domain_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         domain_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string user = 3;
     public static final int USER_FIELD_NUMBER = 3;
     private java.lang.Object user_;
+    /**
+     * <code>optional string user = 3;</code>
+     */
     public boolean hasUser() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public String getUser() {
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    public java.lang.String getUser() {
       java.lang.Object ref = user_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           user_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getUserBytes() {
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getUserBytes() {
       java.lang.Object ref = user_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         user_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string resource = 4;
     public static final int RESOURCE_FIELD_NUMBER = 4;
     private java.lang.Object resource_;
+    /**
+     * <code>optional string resource = 4;</code>
+     */
     public boolean hasResource() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-    public String getResource() {
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    public java.lang.String getResource() {
       java.lang.Object ref = resource_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           resource_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getResourceBytes() {
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getResourceBytes() {
       java.lang.Object ref = resource_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         resource_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string token = 5;
     public static final int TOKEN_FIELD_NUMBER = 5;
     private java.lang.Object token_;
+    /**
+     * <code>optional string token = 5;</code>
+     */
     public boolean hasToken() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
-    public String getToken() {
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    public java.lang.String getToken() {
       java.lang.Object ref = token_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           token_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getTokenBytes() {
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTokenBytes() {
       java.lang.Object ref = token_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         token_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string deviceid = 6;
     public static final int DEVICEID_FIELD_NUMBER = 6;
     private java.lang.Object deviceid_;
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
     public boolean hasDeviceid() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
-    public String getDeviceid() {
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
+    public java.lang.String getDeviceid() {
       java.lang.Object ref = deviceid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           deviceid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getDeviceidBytes() {
+    /**
+     * <code>optional string deviceid = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceidBytes() {
       java.lang.Object ref = deviceid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         deviceid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional int64 lastrmqid = 7;
     public static final int LASTRMQID_FIELD_NUMBER = 7;
     private long lastrmqid_;
+    /**
+     * <code>optional int64 lastrmqid = 7;</code>
+     */
     public boolean hasLastrmqid() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
+    /**
+     * <code>optional int64 lastrmqid = 7;</code>
+     */
     public long getLastrmqid() {
       return lastrmqid_;
     }
-    
+
     // repeated .Setting settings = 8;
     public static final int SETTINGS_FIELD_NUMBER = 8;
     private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> settings_;
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> getSettingsList() {
       return settings_;
     }
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
         getSettingsOrBuilderList() {
       return settings_;
     }
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     public int getSettingsCount() {
       return settings_.size();
     }
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index) {
       return settings_.get(index);
     }
+    /**
+     * <code>repeated .Setting settings = 8;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
         int index) {
       return settings_.get(index);
     }
-    
+
     // optional int32 compress = 9;
     public static final int COMPRESS_FIELD_NUMBER = 9;
     private int compress_;
+    /**
+     * <code>optional int32 compress = 9;</code>
+     */
     public boolean hasCompress() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
+    /**
+     * <code>optional int32 compress = 9;</code>
+     */
     public int getCompress() {
       return compress_;
     }
-    
+
     // repeated string persistentids = 10;
     public static final int PERSISTENTIDS_FIELD_NUMBER = 10;
     private com.google.protobuf.LazyStringList persistentids_;
-    public java.util.List<String>
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    public java.util.List<java.lang.String>
         getPersistentidsList() {
       return persistentids_;
     }
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
     public int getPersistentidsCount() {
       return persistentids_.size();
     }
-    public String getPersistentids(int index) {
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    public java.lang.String getPersistentids(int index) {
       return persistentids_.get(index);
     }
-    
+    /**
+     * <code>repeated string persistentids = 10;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPersistentidsBytes(int index) {
+      return persistentids_.getByteString(index);
+    }
+
     // optional bool includestreamidinprotobuf = 11;
     public static final int INCLUDESTREAMIDINPROTOBUF_FIELD_NUMBER = 11;
     private boolean includestreamidinprotobuf_;
+    /**
+     * <code>optional bool includestreamidinprotobuf = 11;</code>
+     */
     public boolean hasIncludestreamidinprotobuf() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
+    /**
+     * <code>optional bool includestreamidinprotobuf = 11;</code>
+     */
     public boolean getIncludestreamidinprotobuf() {
       return includestreamidinprotobuf_;
     }
-    
+
     // optional bool adaptiveheartbeat = 12;
     public static final int ADAPTIVEHEARTBEAT_FIELD_NUMBER = 12;
     private boolean adaptiveheartbeat_;
+    /**
+     * <code>optional bool adaptiveheartbeat = 12;</code>
+     */
     public boolean hasAdaptiveheartbeat() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
+    /**
+     * <code>optional bool adaptiveheartbeat = 12;</code>
+     */
     public boolean getAdaptiveheartbeat() {
       return adaptiveheartbeat_;
     }
-    
+
     // optional .HeartBeatStat heartbeatstat = 13;
     public static final int HEARTBEATSTAT_FIELD_NUMBER = 13;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat heartbeatstat_;
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     public boolean hasHeartbeatstat() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat getHeartbeatstat() {
       return heartbeatstat_;
     }
+    /**
+     * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder getHeartbeatstatOrBuilder() {
       return heartbeatstat_;
     }
-    
+
     // optional bool usermq2 = 14;
     public static final int USERMQ2_FIELD_NUMBER = 14;
     private boolean usermq2_;
+    /**
+     * <code>optional bool usermq2 = 14;</code>
+     */
     public boolean hasUsermq2() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
+    /**
+     * <code>optional bool usermq2 = 14;</code>
+     */
     public boolean getUsermq2() {
       return usermq2_;
     }
-    
+
     // optional int64 accountid = 15;
     public static final int ACCOUNTID_FIELD_NUMBER = 15;
     private long accountid_;
+    /**
+     * <code>optional int64 accountid = 15;</code>
+     */
     public boolean hasAccountid() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
+    /**
+     * <code>optional int64 accountid = 15;</code>
+     */
     public long getAccountid() {
       return accountid_;
     }
-    
+
     // optional int64 unknown1 = 16;
     public static final int UNKNOWN1_FIELD_NUMBER = 16;
     private long unknown1_;
+    /**
+     * <code>optional int64 unknown1 = 16;</code>
+     */
     public boolean hasUnknown1() {
       return ((bitField0_ & 0x00002000) == 0x00002000);
     }
+    /**
+     * <code>optional int64 unknown1 = 16;</code>
+     */
     public long getUnknown1() {
       return unknown1_;
     }
-    
+
     // optional int32 networktype = 17;
     public static final int NETWORKTYPE_FIELD_NUMBER = 17;
     private int networktype_;
+    /**
+     * <code>optional int32 networktype = 17;</code>
+     */
     public boolean hasNetworktype() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
     }
+    /**
+     * <code>optional int32 networktype = 17;</code>
+     */
     public int getNetworktype() {
       return networktype_;
     }
-    
+
     private void initFields() {
       packetid_ = "";
       domain_ = "";
@@ -459,11 +933,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -520,12 +994,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -604,94 +1078,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code LoginRequest}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequestOrBuilder {
@@ -699,18 +1162,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -723,7 +1189,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         packetid_ = "";
@@ -770,20 +1236,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00010000);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginRequest_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest result = buildPartial();
         if (!result.isInitialized()) {
@@ -791,17 +1257,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest(this);
         int from_bitField0_ = bitField0_;
@@ -889,7 +1345,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest)other);
@@ -898,26 +1354,38 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.getDefaultInstance()) return this;
         if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
+          bitField0_ |= 0x00000001;
+          packetid_ = other.packetid_;
+          onChanged();
         }
         if (other.hasDomain()) {
-          setDomain(other.getDomain());
+          bitField0_ |= 0x00000002;
+          domain_ = other.domain_;
+          onChanged();
         }
         if (other.hasUser()) {
-          setUser(other.getUser());
+          bitField0_ |= 0x00000004;
+          user_ = other.user_;
+          onChanged();
         }
         if (other.hasResource()) {
-          setResource(other.getResource());
+          bitField0_ |= 0x00000008;
+          resource_ = other.resource_;
+          onChanged();
         }
         if (other.hasToken()) {
-          setToken(other.getToken());
+          bitField0_ |= 0x00000010;
+          token_ = other.token_;
+          onChanged();
         }
         if (other.hasDeviceid()) {
-          setDeviceid(other.getDeviceid());
+          bitField0_ |= 0x00000020;
+          deviceid_ = other.deviceid_;
+          onChanged();
         }
         if (other.hasLastrmqid()) {
           setLastrmqid(other.getLastrmqid());
@@ -985,146 +1453,73 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              packetid_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              domain_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              user_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              resource_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              token_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              deviceid_ = input.readBytes();
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              lastrmqid_ = input.readInt64();
-              break;
-            }
-            case 66: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addSettings(subBuilder.buildPartial());
-              break;
-            }
-            case 72: {
-              bitField0_ |= 0x00000100;
-              compress_ = input.readInt32();
-              break;
-            }
-            case 82: {
-              ensurePersistentidsIsMutable();
-              persistentids_.add(input.readBytes());
-              break;
-            }
-            case 88: {
-              bitField0_ |= 0x00000400;
-              includestreamidinprotobuf_ = input.readBool();
-              break;
-            }
-            case 96: {
-              bitField0_ |= 0x00000800;
-              adaptiveheartbeat_ = input.readBool();
-              break;
-            }
-            case 106: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.newBuilder();
-              if (hasHeartbeatstat()) {
-                subBuilder.mergeFrom(getHeartbeatstat());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setHeartbeatstat(subBuilder.buildPartial());
-              break;
-            }
-            case 112: {
-              bitField0_ |= 0x00002000;
-              usermq2_ = input.readBool();
-              break;
-            }
-            case 120: {
-              bitField0_ |= 0x00004000;
-              accountid_ = input.readInt64();
-              break;
-            }
-            case 128: {
-              bitField0_ |= 0x00008000;
-              unknown1_ = input.readInt64();
-              break;
-            }
-            case 136: {
-              bitField0_ |= 0x00010000;
-              networktype_ = input.readInt32();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional string packetid = 1;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1133,34 +1528,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string domain = 2;
       private java.lang.Object domain_ = "";
+      /**
+       * <code>optional string domain = 2;</code>
+       */
       public boolean hasDomain() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getDomain() {
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public java.lang.String getDomain() {
         java.lang.Object ref = domain_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           domain_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setDomain(String value) {
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDomainBytes() {
+        java.lang.Object ref = domain_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          domain_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public Builder setDomain(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1169,34 +1602,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string domain = 2;</code>
+       */
       public Builder clearDomain() {
         bitField0_ = (bitField0_ & ~0x00000002);
         domain_ = getDefaultInstance().getDomain();
         onChanged();
         return this;
       }
-      void setDomain(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public Builder setDomainBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         domain_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string user = 3;
       private java.lang.Object user_ = "";
+      /**
+       * <code>optional string user = 3;</code>
+       */
       public boolean hasUser() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getUser() {
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public java.lang.String getUser() {
         java.lang.Object ref = user_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           user_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setUser(String value) {
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getUserBytes() {
+        java.lang.Object ref = user_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          user_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public Builder setUser(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1205,34 +1676,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string user = 3;</code>
+       */
       public Builder clearUser() {
         bitField0_ = (bitField0_ & ~0x00000004);
         user_ = getDefaultInstance().getUser();
         onChanged();
         return this;
       }
-      void setUser(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public Builder setUserBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         user_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string resource = 4;
       private java.lang.Object resource_ = "";
+      /**
+       * <code>optional string resource = 4;</code>
+       */
       public boolean hasResource() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-      public String getResource() {
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public java.lang.String getResource() {
         java.lang.Object ref = resource_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           resource_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setResource(String value) {
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getResourceBytes() {
+        java.lang.Object ref = resource_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          resource_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public Builder setResource(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1241,34 +1750,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string resource = 4;</code>
+       */
       public Builder clearResource() {
         bitField0_ = (bitField0_ & ~0x00000008);
         resource_ = getDefaultInstance().getResource();
         onChanged();
         return this;
       }
-      void setResource(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public Builder setResourceBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
         resource_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string token = 5;
       private java.lang.Object token_ = "";
+      /**
+       * <code>optional string token = 5;</code>
+       */
       public boolean hasToken() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-      public String getToken() {
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public java.lang.String getToken() {
         java.lang.Object ref = token_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           token_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setToken(String value) {
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTokenBytes() {
+        java.lang.Object ref = token_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          token_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public Builder setToken(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1277,34 +1824,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string token = 5;</code>
+       */
       public Builder clearToken() {
         bitField0_ = (bitField0_ & ~0x00000010);
         token_ = getDefaultInstance().getToken();
         onChanged();
         return this;
       }
-      void setToken(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public Builder setTokenBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
         token_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string deviceid = 6;
       private java.lang.Object deviceid_ = "";
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
       public boolean hasDeviceid() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      public String getDeviceid() {
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
+      public java.lang.String getDeviceid() {
         java.lang.Object ref = deviceid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           deviceid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setDeviceid(String value) {
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceidBytes() {
+        java.lang.Object ref = deviceid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
+      public Builder setDeviceid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1313,39 +1898,62 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
       public Builder clearDeviceid() {
         bitField0_ = (bitField0_ & ~0x00000020);
         deviceid_ = getDefaultInstance().getDeviceid();
         onChanged();
         return this;
       }
-      void setDeviceid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+      /**
+       * <code>optional string deviceid = 6;</code>
+       */
+      public Builder setDeviceidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
         deviceid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int64 lastrmqid = 7;
       private long lastrmqid_ ;
+      /**
+       * <code>optional int64 lastrmqid = 7;</code>
+       */
       public boolean hasLastrmqid() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
+      /**
+       * <code>optional int64 lastrmqid = 7;</code>
+       */
       public long getLastrmqid() {
         return lastrmqid_;
       }
+      /**
+       * <code>optional int64 lastrmqid = 7;</code>
+       */
       public Builder setLastrmqid(long value) {
         bitField0_ |= 0x00000040;
         lastrmqid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 lastrmqid = 7;</code>
+       */
       public Builder clearLastrmqid() {
         bitField0_ = (bitField0_ & ~0x00000040);
         lastrmqid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // repeated .Setting settings = 8;
       private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> settings_ =
         java.util.Collections.emptyList();
@@ -1355,10 +1963,13 @@ public final class GoogleServicesFramework {
           bitField0_ |= 0x00000080;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> settingsBuilder_;
-      
+
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> getSettingsList() {
         if (settingsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(settings_);
@@ -1366,6 +1977,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public int getSettingsCount() {
         if (settingsBuilder_ == null) {
           return settings_.size();
@@ -1373,6 +1987,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index) {
         if (settingsBuilder_ == null) {
           return settings_.get(index);
@@ -1380,6 +1997,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder setSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
@@ -1394,6 +2014,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder setSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -1405,6 +2028,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder addSettings(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
           if (value == null) {
@@ -1418,6 +2044,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder addSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
@@ -1432,6 +2061,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder addSettings(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -1443,6 +2075,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder addSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -1454,6 +2089,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder addAllSettings(
           java.lang.Iterable<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> values) {
         if (settingsBuilder_ == null) {
@@ -1465,6 +2103,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
@@ -1475,6 +2116,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public Builder removeSettings(int index) {
         if (settingsBuilder_ == null) {
           ensureSettingsIsMutable();
@@ -1485,10 +2129,16 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder getSettingsBuilder(
           int index) {
         return getSettingsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
           int index) {
         if (settingsBuilder_ == null) {
@@ -1496,6 +2146,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
            getSettingsOrBuilderList() {
         if (settingsBuilder_ != null) {
@@ -1504,15 +2157,24 @@ public final class GoogleServicesFramework {
           return java.util.Collections.unmodifiableList(settings_);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder addSettingsBuilder() {
         return getSettingsFieldBuilder().addBuilder(
             com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder addSettingsBuilder(
           int index) {
         return getSettingsFieldBuilder().addBuilder(
             index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Setting settings = 8;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder> 
            getSettingsBuilderList() {
         return getSettingsFieldBuilder().getBuilderList();
@@ -1531,28 +2193,40 @@ public final class GoogleServicesFramework {
         }
         return settingsBuilder_;
       }
-      
+
       // optional int32 compress = 9;
       private int compress_ ;
+      /**
+       * <code>optional int32 compress = 9;</code>
+       */
       public boolean hasCompress() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
+      /**
+       * <code>optional int32 compress = 9;</code>
+       */
       public int getCompress() {
         return compress_;
       }
+      /**
+       * <code>optional int32 compress = 9;</code>
+       */
       public Builder setCompress(int value) {
         bitField0_ |= 0x00000100;
         compress_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 compress = 9;</code>
+       */
       public Builder clearCompress() {
         bitField0_ = (bitField0_ & ~0x00000100);
         compress_ = 0;
         onChanged();
         return this;
       }
-      
+
       // repeated string persistentids = 10;
       private com.google.protobuf.LazyStringList persistentids_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensurePersistentidsIsMutable() {
@@ -1561,18 +2235,37 @@ public final class GoogleServicesFramework {
           bitField0_ |= 0x00000200;
          }
       }
-      public java.util.List<String>
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
+      public java.util.List<java.lang.String>
           getPersistentidsList() {
         return java.util.Collections.unmodifiableList(persistentids_);
       }
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
       public int getPersistentidsCount() {
         return persistentids_.size();
       }
-      public String getPersistentids(int index) {
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
+      public java.lang.String getPersistentids(int index) {
         return persistentids_.get(index);
       }
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPersistentidsBytes(int index) {
+        return persistentids_.getByteString(index);
+      }
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
       public Builder setPersistentids(
-          int index, String value) {
+          int index, java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1581,7 +2274,11 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
-      public Builder addPersistentids(String value) {
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
+      public Builder addPersistentids(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1590,74 +2287,118 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
       public Builder addAllPersistentids(
-          java.lang.Iterable<String> values) {
+          java.lang.Iterable<java.lang.String> values) {
         ensurePersistentidsIsMutable();
         super.addAll(values, persistentids_);
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
       public Builder clearPersistentids() {
         persistentids_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000200);
         onChanged();
         return this;
       }
-      void addPersistentids(com.google.protobuf.ByteString value) {
-        ensurePersistentidsIsMutable();
+      /**
+       * <code>repeated string persistentids = 10;</code>
+       */
+      public Builder addPersistentidsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensurePersistentidsIsMutable();
         persistentids_.add(value);
         onChanged();
+        return this;
       }
-      
+
       // optional bool includestreamidinprotobuf = 11;
       private boolean includestreamidinprotobuf_ ;
+      /**
+       * <code>optional bool includestreamidinprotobuf = 11;</code>
+       */
       public boolean hasIncludestreamidinprotobuf() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
+      /**
+       * <code>optional bool includestreamidinprotobuf = 11;</code>
+       */
       public boolean getIncludestreamidinprotobuf() {
         return includestreamidinprotobuf_;
       }
+      /**
+       * <code>optional bool includestreamidinprotobuf = 11;</code>
+       */
       public Builder setIncludestreamidinprotobuf(boolean value) {
         bitField0_ |= 0x00000400;
         includestreamidinprotobuf_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool includestreamidinprotobuf = 11;</code>
+       */
       public Builder clearIncludestreamidinprotobuf() {
         bitField0_ = (bitField0_ & ~0x00000400);
         includestreamidinprotobuf_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional bool adaptiveheartbeat = 12;
       private boolean adaptiveheartbeat_ ;
+      /**
+       * <code>optional bool adaptiveheartbeat = 12;</code>
+       */
       public boolean hasAdaptiveheartbeat() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
+      /**
+       * <code>optional bool adaptiveheartbeat = 12;</code>
+       */
       public boolean getAdaptiveheartbeat() {
         return adaptiveheartbeat_;
       }
+      /**
+       * <code>optional bool adaptiveheartbeat = 12;</code>
+       */
       public Builder setAdaptiveheartbeat(boolean value) {
         bitField0_ |= 0x00000800;
         adaptiveheartbeat_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool adaptiveheartbeat = 12;</code>
+       */
       public Builder clearAdaptiveheartbeat() {
         bitField0_ = (bitField0_ & ~0x00000800);
         adaptiveheartbeat_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional .HeartBeatStat heartbeatstat = 13;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat heartbeatstat_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder> heartbeatstatBuilder_;
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public boolean hasHeartbeatstat() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat getHeartbeatstat() {
         if (heartbeatstatBuilder_ == null) {
           return heartbeatstat_;
@@ -1665,6 +2406,9 @@ public final class GoogleServicesFramework {
           return heartbeatstatBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public Builder setHeartbeatstat(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat value) {
         if (heartbeatstatBuilder_ == null) {
           if (value == null) {
@@ -1678,6 +2422,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00001000;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public Builder setHeartbeatstat(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder builderForValue) {
         if (heartbeatstatBuilder_ == null) {
@@ -1689,6 +2436,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00001000;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public Builder mergeHeartbeatstat(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat value) {
         if (heartbeatstatBuilder_ == null) {
           if (((bitField0_ & 0x00001000) == 0x00001000) &&
@@ -1705,6 +2455,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00001000;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public Builder clearHeartbeatstat() {
         if (heartbeatstatBuilder_ == null) {
           heartbeatstat_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance();
@@ -1715,11 +2468,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00001000);
         return this;
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder getHeartbeatstatBuilder() {
         bitField0_ |= 0x00001000;
         onChanged();
         return getHeartbeatstatFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder getHeartbeatstatOrBuilder() {
         if (heartbeatstatBuilder_ != null) {
           return heartbeatstatBuilder_.getMessageOrBuilder();
@@ -1727,6 +2486,9 @@ public final class GoogleServicesFramework {
           return heartbeatstat_;
         }
       }
+      /**
+       * <code>optional .HeartBeatStat heartbeatstat = 13;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder> 
           getHeartbeatstatFieldBuilder() {
@@ -1740,478 +2502,236 @@ public final class GoogleServicesFramework {
         }
         return heartbeatstatBuilder_;
       }
-      
+
       // optional bool usermq2 = 14;
       private boolean usermq2_ ;
+      /**
+       * <code>optional bool usermq2 = 14;</code>
+       */
       public boolean hasUsermq2() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
+      /**
+       * <code>optional bool usermq2 = 14;</code>
+       */
       public boolean getUsermq2() {
         return usermq2_;
       }
+      /**
+       * <code>optional bool usermq2 = 14;</code>
+       */
       public Builder setUsermq2(boolean value) {
         bitField0_ |= 0x00002000;
         usermq2_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool usermq2 = 14;</code>
+       */
       public Builder clearUsermq2() {
         bitField0_ = (bitField0_ & ~0x00002000);
         usermq2_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional int64 accountid = 15;
       private long accountid_ ;
+      /**
+       * <code>optional int64 accountid = 15;</code>
+       */
       public boolean hasAccountid() {
         return ((bitField0_ & 0x00004000) == 0x00004000);
       }
+      /**
+       * <code>optional int64 accountid = 15;</code>
+       */
       public long getAccountid() {
         return accountid_;
       }
+      /**
+       * <code>optional int64 accountid = 15;</code>
+       */
       public Builder setAccountid(long value) {
         bitField0_ |= 0x00004000;
         accountid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 accountid = 15;</code>
+       */
       public Builder clearAccountid() {
         bitField0_ = (bitField0_ & ~0x00004000);
         accountid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional int64 unknown1 = 16;
       private long unknown1_ ;
+      /**
+       * <code>optional int64 unknown1 = 16;</code>
+       */
       public boolean hasUnknown1() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
+      /**
+       * <code>optional int64 unknown1 = 16;</code>
+       */
       public long getUnknown1() {
         return unknown1_;
       }
+      /**
+       * <code>optional int64 unknown1 = 16;</code>
+       */
       public Builder setUnknown1(long value) {
         bitField0_ |= 0x00008000;
         unknown1_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 unknown1 = 16;</code>
+       */
       public Builder clearUnknown1() {
         bitField0_ = (bitField0_ & ~0x00008000);
         unknown1_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional int32 networktype = 17;
       private int networktype_ ;
+      /**
+       * <code>optional int32 networktype = 17;</code>
+       */
       public boolean hasNetworktype() {
         return ((bitField0_ & 0x00010000) == 0x00010000);
       }
+      /**
+       * <code>optional int32 networktype = 17;</code>
+       */
       public int getNetworktype() {
         return networktype_;
       }
+      /**
+       * <code>optional int32 networktype = 17;</code>
+       */
       public Builder setNetworktype(int value) {
         bitField0_ |= 0x00010000;
         networktype_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 networktype = 17;</code>
+       */
       public Builder clearNetworktype() {
         bitField0_ = (bitField0_ & ~0x00010000);
         networktype_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:LoginRequest)
     }
-    
+
     static {
       defaultInstance = new LoginRequest(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:LoginRequest)
   }
-  
+
   public interface HeartBeatStatOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string ip = 1;
+    /**
+     * <code>optional string ip = 1;</code>
+     */
     boolean hasIp();
-    String getIp();
-    
+    /**
+     * <code>optional string ip = 1;</code>
+     */
+    java.lang.String getIp();
+    /**
+     * <code>optional string ip = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getIpBytes();
+
     // optional bool timeout = 2;
+    /**
+     * <code>optional bool timeout = 2;</code>
+     */
     boolean hasTimeout();
+    /**
+     * <code>optional bool timeout = 2;</code>
+     */
     boolean getTimeout();
-    
+
     // optional int64 interval = 3;
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
     boolean hasInterval();
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
     long getInterval();
   }
+  /**
+   * Protobuf type {@code HeartBeatStat}
+   */
   public static final class HeartBeatStat extends
       com.google.protobuf.GeneratedMessage
       implements HeartBeatStatOrBuilder {
     // Use HeartBeatStat.newBuilder() to construct.
-    private HeartBeatStat(Builder builder) {
+    private HeartBeatStat(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private HeartBeatStat(boolean noInit) {}
-    
+    private HeartBeatStat(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final HeartBeatStat defaultInstance;
     public static HeartBeatStat getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public HeartBeatStat getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // optional string ip = 1;
-    public static final int IP_FIELD_NUMBER = 1;
-    private java.lang.Object ip_;
-    public boolean hasIp() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getIp() {
-      java.lang.Object ref = ip_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          ip_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getIpBytes() {
-      java.lang.Object ref = ip_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        ip_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional bool timeout = 2;
-    public static final int TIMEOUT_FIELD_NUMBER = 2;
-    private boolean timeout_;
-    public boolean hasTimeout() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public boolean getTimeout() {
-      return timeout_;
-    }
-    
-    // optional int64 interval = 3;
-    public static final int INTERVAL_FIELD_NUMBER = 3;
-    private long interval_;
-    public boolean hasInterval() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public long getInterval() {
-      return interval_;
-    }
-    
-    private void initFields() {
-      ip_ = "";
-      timeout_ = false;
-      interval_ = 0L;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getIpBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBool(2, timeout_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt64(3, interval_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getIpBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, timeout_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, interval_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+    private HeartBeatStat(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_fieldAccessorTable;
-      }
-      
-      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        ip_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        timeout_ = false;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        interval_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDescriptor();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat getDefaultInstanceForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat build() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat buildPartial() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.ip_ = ip_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.timeout_ = timeout_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.interval_ = interval_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat) {
-          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat other) {
-        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance()) return this;
-        if (other.hasIp()) {
-          setIp(other.getIp());
-        }
-        if (other.hasTimeout()) {
-          setTimeout(other.getTimeout());
-        }
-        if (other.hasInterval()) {
-          setInterval(other.getInterval());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -2232,26 +2752,425 @@ public final class GoogleServicesFramework {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<HeartBeatStat> PARSER =
+        new com.google.protobuf.AbstractParser<HeartBeatStat>() {
+      public HeartBeatStat parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new HeartBeatStat(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<HeartBeatStat> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional string ip = 1;
+    public static final int IP_FIELD_NUMBER = 1;
+    private java.lang.Object ip_;
+    /**
+     * <code>optional string ip = 1;</code>
+     */
+    public boolean hasIp() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string ip = 1;</code>
+     */
+    public java.lang.String getIp() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          ip_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string ip = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIpBytes() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        ip_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional bool timeout = 2;
+    public static final int TIMEOUT_FIELD_NUMBER = 2;
+    private boolean timeout_;
+    /**
+     * <code>optional bool timeout = 2;</code>
+     */
+    public boolean hasTimeout() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional bool timeout = 2;</code>
+     */
+    public boolean getTimeout() {
+      return timeout_;
+    }
+
+    // optional int64 interval = 3;
+    public static final int INTERVAL_FIELD_NUMBER = 3;
+    private long interval_;
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
+    public boolean hasInterval() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
+    public long getInterval() {
+      return interval_;
+    }
+
+    private void initFields() {
+      ip_ = "";
+      timeout_ = false;
+      interval_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, timeout_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt64(3, interval_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, timeout_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, interval_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code HeartBeatStat}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStatOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder.class);
+      }
+
+      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        ip_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        timeout_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        interval_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatStat_descriptor;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat getDefaultInstanceForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance();
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat build() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat buildPartial() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.ip_ = ip_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.timeout_ = timeout_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.interval_ = interval_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat) {
+          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat other) {
+        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.getDefaultInstance()) return this;
+        if (other.hasIp()) {
+          bitField0_ |= 0x00000001;
+          ip_ = other.ip_;
+          onChanged();
+        }
+        if (other.hasTimeout()) {
+          setTimeout(other.getTimeout());
+        }
+        if (other.hasInterval()) {
+          setInterval(other.getInterval());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // optional string ip = 1;
       private java.lang.Object ip_ = "";
+      /**
+       * <code>optional string ip = 1;</code>
+       */
       public boolean hasIp() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getIp() {
+      /**
+       * <code>optional string ip = 1;</code>
+       */
+      public java.lang.String getIp() {
         java.lang.Object ref = ip_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           ip_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setIp(String value) {
+      /**
+       * <code>optional string ip = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getIpBytes() {
+        java.lang.Object ref = ip_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ip_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string ip = 1;</code>
+       */
+      public Builder setIp(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2260,175 +3179,326 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string ip = 1;</code>
+       */
       public Builder clearIp() {
         bitField0_ = (bitField0_ & ~0x00000001);
         ip_ = getDefaultInstance().getIp();
         onChanged();
         return this;
       }
-      void setIp(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string ip = 1;</code>
+       */
+      public Builder setIpBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         ip_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional bool timeout = 2;
       private boolean timeout_ ;
+      /**
+       * <code>optional bool timeout = 2;</code>
+       */
       public boolean hasTimeout() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>optional bool timeout = 2;</code>
+       */
       public boolean getTimeout() {
         return timeout_;
       }
+      /**
+       * <code>optional bool timeout = 2;</code>
+       */
       public Builder setTimeout(boolean value) {
         bitField0_ |= 0x00000002;
         timeout_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool timeout = 2;</code>
+       */
       public Builder clearTimeout() {
         bitField0_ = (bitField0_ & ~0x00000002);
         timeout_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional int64 interval = 3;
       private long interval_ ;
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public boolean hasInterval() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public long getInterval() {
         return interval_;
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public Builder setInterval(long value) {
         bitField0_ |= 0x00000004;
         interval_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public Builder clearInterval() {
         bitField0_ = (bitField0_ & ~0x00000004);
         interval_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:HeartBeatStat)
     }
-    
+
     static {
       defaultInstance = new HeartBeatStat(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:HeartBeatStat)
   }
-  
+
   public interface SettingOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string key = 1;
+    /**
+     * <code>optional string key = 1;</code>
+     */
     boolean hasKey();
-    String getKey();
-    
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
     // optional string value = 2;
+    /**
+     * <code>optional string value = 2;</code>
+     */
     boolean hasValue();
-    String getValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    java.lang.String getValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getValueBytes();
   }
+  /**
+   * Protobuf type {@code Setting}
+   */
   public static final class Setting extends
       com.google.protobuf.GeneratedMessage
       implements SettingOrBuilder {
     // Use Setting.newBuilder() to construct.
-    private Setting(Builder builder) {
+    private Setting(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private Setting(boolean noInit) {}
-    
+    private Setting(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final Setting defaultInstance;
     public static Setting getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public Setting getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Setting(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              value_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<Setting> PARSER =
+        new com.google.protobuf.AbstractParser<Setting>() {
+      public Setting parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Setting(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Setting> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
+    /**
+     * <code>optional string key = 1;</code>
+     */
     public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public String getKey() {
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public java.lang.String getKey() {
       java.lang.Object ref = key_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           key_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getKeyBytes() {
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
       java.lang.Object ref = key_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         key_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
     private java.lang.Object value_;
+    /**
+     * <code>optional string value = 2;</code>
+     */
     public boolean hasValue() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getValue() {
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public java.lang.String getValue() {
       java.lang.Object ref = value_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           value_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getValueBytes() {
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getValueBytes() {
       java.lang.Object ref = value_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         value_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     private void initFields() {
       key_ = "";
       value_ = "";
@@ -2437,11 +3507,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -2453,12 +3523,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2472,94 +3542,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code Setting}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder {
@@ -2567,18 +3626,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2589,7 +3651,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         key_ = "";
@@ -2598,20 +3660,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Setting_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting result = buildPartial();
         if (!result.isInitialized()) {
@@ -2619,17 +3681,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting(this);
         int from_bitField0_ = bitField0_;
@@ -2646,7 +3698,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting)other);
@@ -2655,78 +3707,89 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance()) return this;
         if (other.hasKey()) {
-          setKey(other.getKey());
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
         }
         if (other.hasValue()) {
-          setValue(other.getValue());
+          bitField0_ |= 0x00000002;
+          value_ = other.value_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              value_ = input.readBytes();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional string key = 1;
       private java.lang.Object key_ = "";
+      /**
+       * <code>optional string key = 1;</code>
+       */
       public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getKey() {
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public java.lang.String getKey() {
         java.lang.Object ref = key_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           key_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setKey(String value) {
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2735,34 +3798,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string key = 1;</code>
+       */
       public Builder clearKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
         key_ = getDefaultInstance().getKey();
         onChanged();
         return this;
       }
-      void setKey(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         key_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string value = 2;
       private java.lang.Object value_ = "";
+      /**
+       * <code>optional string value = 2;</code>
+       */
       public boolean hasValue() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getValue() {
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public java.lang.String getValue() {
         java.lang.Object ref = value_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           value_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setValue(String value) {
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getValueBytes() {
+        java.lang.Object ref = value_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          value_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValue(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2771,405 +3872,126 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string value = 2;</code>
+       */
       public Builder clearValue() {
         bitField0_ = (bitField0_ & ~0x00000002);
         value_ = getDefaultInstance().getValue();
         onChanged();
         return this;
       }
-      void setValue(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValueBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         value_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:Setting)
     }
-    
+
     static {
       defaultInstance = new Setting(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:Setting)
   }
-  
+
   public interface HeartBeatConfigOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int64 interval = 3;
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
     boolean hasInterval();
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
     long getInterval();
-    
+
     // optional string ip = 2;
+    /**
+     * <code>optional string ip = 2;</code>
+     */
     boolean hasIp();
-    String getIp();
-    
+    /**
+     * <code>optional string ip = 2;</code>
+     */
+    java.lang.String getIp();
+    /**
+     * <code>optional string ip = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getIpBytes();
+
     // optional bool uploadstat = 1;
+    /**
+     * <code>optional bool uploadstat = 1;</code>
+     */
     boolean hasUploadstat();
+    /**
+     * <code>optional bool uploadstat = 1;</code>
+     */
     boolean getUploadstat();
   }
+  /**
+   * Protobuf type {@code HeartBeatConfig}
+   */
   public static final class HeartBeatConfig extends
       com.google.protobuf.GeneratedMessage
       implements HeartBeatConfigOrBuilder {
     // Use HeartBeatConfig.newBuilder() to construct.
-    private HeartBeatConfig(Builder builder) {
+    private HeartBeatConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private HeartBeatConfig(boolean noInit) {}
-    
+    private HeartBeatConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final HeartBeatConfig defaultInstance;
     public static HeartBeatConfig getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public HeartBeatConfig getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // optional int64 interval = 3;
-    public static final int INTERVAL_FIELD_NUMBER = 3;
-    private long interval_;
-    public boolean hasInterval() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public long getInterval() {
-      return interval_;
-    }
-    
-    // optional string ip = 2;
-    public static final int IP_FIELD_NUMBER = 2;
-    private java.lang.Object ip_;
-    public boolean hasIp() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getIp() {
-      java.lang.Object ref = ip_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          ip_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getIpBytes() {
-      java.lang.Object ref = ip_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        ip_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional bool uploadstat = 1;
-    public static final int UPLOADSTAT_FIELD_NUMBER = 1;
-    private boolean uploadstat_;
-    public boolean hasUploadstat() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public boolean getUploadstat() {
-      return uploadstat_;
-    }
-    
-    private void initFields() {
-      interval_ = 0L;
-      ip_ = "";
-      uploadstat_ = false;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(1, uploadstat_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getIpBytes());
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(3, interval_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, uploadstat_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getIpBytes());
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, interval_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+    private HeartBeatConfig(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_fieldAccessorTable;
-      }
-      
-      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        interval_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        ip_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        uploadstat_ = false;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDescriptor();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig getDefaultInstanceForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig build() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig buildPartial() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.interval_ = interval_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.ip_ = ip_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.uploadstat_ = uploadstat_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig) {
-          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig other) {
-        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance()) return this;
-        if (other.hasInterval()) {
-          setInterval(other.getInterval());
-        }
-        if (other.hasIp()) {
-          setIp(other.getIp());
-        }
-        if (other.hasUploadstat()) {
-          setUploadstat(other.getUploadstat());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -3190,47 +4012,458 @@ public final class GoogleServicesFramework {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<HeartBeatConfig> PARSER =
+        new com.google.protobuf.AbstractParser<HeartBeatConfig>() {
+      public HeartBeatConfig parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new HeartBeatConfig(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<HeartBeatConfig> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional int64 interval = 3;
+    public static final int INTERVAL_FIELD_NUMBER = 3;
+    private long interval_;
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
+    public boolean hasInterval() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int64 interval = 3;</code>
+     */
+    public long getInterval() {
+      return interval_;
+    }
+
+    // optional string ip = 2;
+    public static final int IP_FIELD_NUMBER = 2;
+    private java.lang.Object ip_;
+    /**
+     * <code>optional string ip = 2;</code>
+     */
+    public boolean hasIp() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string ip = 2;</code>
+     */
+    public java.lang.String getIp() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          ip_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string ip = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIpBytes() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        ip_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional bool uploadstat = 1;
+    public static final int UPLOADSTAT_FIELD_NUMBER = 1;
+    private boolean uploadstat_;
+    /**
+     * <code>optional bool uploadstat = 1;</code>
+     */
+    public boolean hasUploadstat() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool uploadstat = 1;</code>
+     */
+    public boolean getUploadstat() {
+      return uploadstat_;
+    }
+
+    private void initFields() {
+      interval_ = 0L;
+      ip_ = "";
+      uploadstat_ = false;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(1, uploadstat_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(3, interval_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, uploadstat_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, interval_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code HeartBeatConfig}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder.class);
+      }
+
+      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        interval_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        ip_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        uploadstat_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartBeatConfig_descriptor;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig getDefaultInstanceForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance();
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig build() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig buildPartial() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.interval_ = interval_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.ip_ = ip_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.uploadstat_ = uploadstat_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig) {
+          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig other) {
+        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance()) return this;
+        if (other.hasInterval()) {
+          setInterval(other.getInterval());
+        }
+        if (other.hasIp()) {
+          bitField0_ |= 0x00000002;
+          ip_ = other.ip_;
+          onChanged();
+        }
+        if (other.hasUploadstat()) {
+          setUploadstat(other.getUploadstat());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // optional int64 interval = 3;
       private long interval_ ;
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public boolean hasInterval() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public long getInterval() {
         return interval_;
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public Builder setInterval(long value) {
         bitField0_ |= 0x00000001;
         interval_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 interval = 3;</code>
+       */
       public Builder clearInterval() {
         bitField0_ = (bitField0_ & ~0x00000001);
         interval_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional string ip = 2;
       private java.lang.Object ip_ = "";
+      /**
+       * <code>optional string ip = 2;</code>
+       */
       public boolean hasIp() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getIp() {
+      /**
+       * <code>optional string ip = 2;</code>
+       */
+      public java.lang.String getIp() {
         java.lang.Object ref = ip_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           ip_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setIp(String value) {
+      /**
+       * <code>optional string ip = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getIpBytes() {
+        java.lang.Object ref = ip_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ip_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string ip = 2;</code>
+       */
+      public Builder setIp(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3239,263 +4472,556 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string ip = 2;</code>
+       */
       public Builder clearIp() {
         bitField0_ = (bitField0_ & ~0x00000002);
         ip_ = getDefaultInstance().getIp();
         onChanged();
         return this;
       }
-      void setIp(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string ip = 2;</code>
+       */
+      public Builder setIpBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         ip_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional bool uploadstat = 1;
       private boolean uploadstat_ ;
+      /**
+       * <code>optional bool uploadstat = 1;</code>
+       */
       public boolean hasUploadstat() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>optional bool uploadstat = 1;</code>
+       */
       public boolean getUploadstat() {
         return uploadstat_;
       }
+      /**
+       * <code>optional bool uploadstat = 1;</code>
+       */
       public Builder setUploadstat(boolean value) {
         bitField0_ |= 0x00000004;
         uploadstat_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool uploadstat = 1;</code>
+       */
       public Builder clearUploadstat() {
         bitField0_ = (bitField0_ & ~0x00000004);
         uploadstat_ = false;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:HeartBeatConfig)
     }
-    
+
     static {
       defaultInstance = new HeartBeatConfig(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:HeartBeatConfig)
   }
-  
+
   public interface LoginResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string packetid = 1;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string jid = 2;
+    /**
+     * <code>optional string jid = 2;</code>
+     */
     boolean hasJid();
-    String getJid();
-    
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    java.lang.String getJid();
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getJidBytes();
+
     // optional int64 servertimestamp = 8;
+    /**
+     * <code>optional int64 servertimestamp = 8;</code>
+     */
     boolean hasServertimestamp();
+    /**
+     * <code>optional int64 servertimestamp = 8;</code>
+     */
     long getServertimestamp();
-    
+
     // optional .HeartBeatConfig heartbeatconfig = 7;
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     boolean hasHeartbeatconfig();
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig getHeartbeatconfig();
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder getHeartbeatconfigOrBuilder();
-    
+
     // repeated .Setting settings = 4;
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> 
         getSettingsList();
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index);
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     int getSettingsCount();
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
         getSettingsOrBuilderList();
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
         int index);
-    
+
     // optional int32 laststreamid = 6;
+    /**
+     * <code>optional int32 laststreamid = 6;</code>
+     */
     boolean hasLaststreamid();
+    /**
+     * <code>optional int32 laststreamid = 6;</code>
+     */
     int getLaststreamid();
-    
+
     // optional int32 streamid = 5;
+    /**
+     * <code>optional int32 streamid = 5;</code>
+     */
     boolean hasStreamid();
+    /**
+     * <code>optional int32 streamid = 5;</code>
+     */
     int getStreamid();
-    
+
     // optional .XMPPError error = 3;
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     boolean hasError();
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError();
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder();
   }
+  /**
+   * Protobuf type {@code LoginResponse}
+   */
   public static final class LoginResponse extends
       com.google.protobuf.GeneratedMessage
       implements LoginResponseOrBuilder {
     // Use LoginResponse.newBuilder() to construct.
-    private LoginResponse(Builder builder) {
+    private LoginResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private LoginResponse(boolean noInit) {}
-    
+    private LoginResponse(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final LoginResponse defaultInstance;
     public static LoginResponse getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public LoginResponse getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private LoginResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              packetid_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              jid_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000040) == 0x00000040)) {
+                subBuilder = error_.toBuilder();
+              }
+              error_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(error_);
+                error_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000040;
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+                settings_ = new java.util.ArrayList<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              settings_.add(input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.PARSER, extensionRegistry));
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000020;
+              streamid_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000010;
+              laststreamid_ = input.readInt32();
+              break;
+            }
+            case 58: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = heartbeatconfig_.toBuilder();
+              }
+              heartbeatconfig_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(heartbeatconfig_);
+                heartbeatconfig_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
+              break;
+            }
+            case 64: {
+              bitField0_ |= 0x00000004;
+              servertimestamp_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+          settings_ = java.util.Collections.unmodifiableList(settings_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<LoginResponse> PARSER =
+        new com.google.protobuf.AbstractParser<LoginResponse>() {
+      public LoginResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new LoginResponse(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<LoginResponse> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional string packetid = 1;
     public static final int PACKETID_FIELD_NUMBER = 1;
     private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     public boolean hasPacketid() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public String getPacketid() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public java.lang.String getPacketid() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           packetid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPacketidBytes() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         packetid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string jid = 2;
     public static final int JID_FIELD_NUMBER = 2;
     private java.lang.Object jid_;
+    /**
+     * <code>optional string jid = 2;</code>
+     */
     public boolean hasJid() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getJid() {
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    public java.lang.String getJid() {
       java.lang.Object ref = jid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           jid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getJidBytes() {
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getJidBytes() {
       java.lang.Object ref = jid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         jid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional int64 servertimestamp = 8;
     public static final int SERVERTIMESTAMP_FIELD_NUMBER = 8;
     private long servertimestamp_;
+    /**
+     * <code>optional int64 servertimestamp = 8;</code>
+     */
     public boolean hasServertimestamp() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>optional int64 servertimestamp = 8;</code>
+     */
     public long getServertimestamp() {
       return servertimestamp_;
     }
-    
+
     // optional .HeartBeatConfig heartbeatconfig = 7;
     public static final int HEARTBEATCONFIG_FIELD_NUMBER = 7;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig heartbeatconfig_;
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     public boolean hasHeartbeatconfig() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig getHeartbeatconfig() {
       return heartbeatconfig_;
     }
+    /**
+     * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder getHeartbeatconfigOrBuilder() {
       return heartbeatconfig_;
     }
-    
+
     // repeated .Setting settings = 4;
     public static final int SETTINGS_FIELD_NUMBER = 4;
     private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> settings_;
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> getSettingsList() {
       return settings_;
     }
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
         getSettingsOrBuilderList() {
       return settings_;
     }
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     public int getSettingsCount() {
       return settings_.size();
     }
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index) {
       return settings_.get(index);
     }
+    /**
+     * <code>repeated .Setting settings = 4;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
         int index) {
       return settings_.get(index);
     }
-    
+
     // optional int32 laststreamid = 6;
     public static final int LASTSTREAMID_FIELD_NUMBER = 6;
     private int laststreamid_;
+    /**
+     * <code>optional int32 laststreamid = 6;</code>
+     */
     public boolean hasLaststreamid() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
+    /**
+     * <code>optional int32 laststreamid = 6;</code>
+     */
     public int getLaststreamid() {
       return laststreamid_;
     }
-    
+
     // optional int32 streamid = 5;
     public static final int STREAMID_FIELD_NUMBER = 5;
     private int streamid_;
+    /**
+     * <code>optional int32 streamid = 5;</code>
+     */
     public boolean hasStreamid() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
+    /**
+     * <code>optional int32 streamid = 5;</code>
+     */
     public int getStreamid() {
       return streamid_;
     }
-    
+
     // optional .XMPPError error = 3;
     public static final int ERROR_FIELD_NUMBER = 3;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_;
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public boolean hasError() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
       return error_;
     }
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
       return error_;
     }
-    
+
     private void initFields() {
       packetid_ = "";
       jid_ = "";
@@ -3510,11 +5036,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -3544,12 +5070,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3587,94 +5113,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code LoginResponse}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponseOrBuilder {
@@ -3682,18 +5197,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3707,7 +5225,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         packetid_ = "";
@@ -3740,20 +5258,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000080);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_LoginResponse_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse result = buildPartial();
         if (!result.isInitialized()) {
@@ -3761,17 +5279,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse(this);
         int from_bitField0_ = bitField0_;
@@ -3825,7 +5333,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse)other);
@@ -3834,14 +5342,18 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.getDefaultInstance()) return this;
         if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
+          bitField0_ |= 0x00000001;
+          packetid_ = other.packetid_;
+          onChanged();
         }
         if (other.hasJid()) {
-          setJid(other.getJid());
+          bitField0_ |= 0x00000002;
+          jid_ = other.jid_;
+          onChanged();
         }
         if (other.hasServertimestamp()) {
           setServertimestamp(other.getServertimestamp());
@@ -3887,105 +5399,73 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              packetid_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              jid_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.newBuilder();
-              if (hasError()) {
-                subBuilder.mergeFrom(getError());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setError(subBuilder.buildPartial());
-              break;
-            }
-            case 34: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addSettings(subBuilder.buildPartial());
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000040;
-              streamid_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              laststreamid_ = input.readInt32();
-              break;
-            }
-            case 58: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.newBuilder();
-              if (hasHeartbeatconfig()) {
-                subBuilder.mergeFrom(getHeartbeatconfig());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setHeartbeatconfig(subBuilder.buildPartial());
-              break;
-            }
-            case 64: {
-              bitField0_ |= 0x00000004;
-              servertimestamp_ = input.readInt64();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional string packetid = 1;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3994,34 +5474,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string jid = 2;
       private java.lang.Object jid_ = "";
+      /**
+       * <code>optional string jid = 2;</code>
+       */
       public boolean hasJid() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getJid() {
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public java.lang.String getJid() {
         java.lang.Object ref = jid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           jid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setJid(String value) {
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getJidBytes() {
+        java.lang.Object ref = jid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          jid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public Builder setJid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4030,46 +5548,75 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string jid = 2;</code>
+       */
       public Builder clearJid() {
         bitField0_ = (bitField0_ & ~0x00000002);
         jid_ = getDefaultInstance().getJid();
         onChanged();
         return this;
       }
-      void setJid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public Builder setJidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         jid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int64 servertimestamp = 8;
       private long servertimestamp_ ;
+      /**
+       * <code>optional int64 servertimestamp = 8;</code>
+       */
       public boolean hasServertimestamp() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>optional int64 servertimestamp = 8;</code>
+       */
       public long getServertimestamp() {
         return servertimestamp_;
       }
+      /**
+       * <code>optional int64 servertimestamp = 8;</code>
+       */
       public Builder setServertimestamp(long value) {
         bitField0_ |= 0x00000004;
         servertimestamp_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 servertimestamp = 8;</code>
+       */
       public Builder clearServertimestamp() {
         bitField0_ = (bitField0_ & ~0x00000004);
         servertimestamp_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional .HeartBeatConfig heartbeatconfig = 7;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig heartbeatconfig_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder> heartbeatconfigBuilder_;
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public boolean hasHeartbeatconfig() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig getHeartbeatconfig() {
         if (heartbeatconfigBuilder_ == null) {
           return heartbeatconfig_;
@@ -4077,6 +5624,9 @@ public final class GoogleServicesFramework {
           return heartbeatconfigBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public Builder setHeartbeatconfig(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig value) {
         if (heartbeatconfigBuilder_ == null) {
           if (value == null) {
@@ -4090,6 +5640,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public Builder setHeartbeatconfig(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder builderForValue) {
         if (heartbeatconfigBuilder_ == null) {
@@ -4101,6 +5654,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public Builder mergeHeartbeatconfig(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig value) {
         if (heartbeatconfigBuilder_ == null) {
           if (((bitField0_ & 0x00000008) == 0x00000008) &&
@@ -4117,6 +5673,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public Builder clearHeartbeatconfig() {
         if (heartbeatconfigBuilder_ == null) {
           heartbeatconfig_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.getDefaultInstance();
@@ -4127,11 +5686,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder getHeartbeatconfigBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getHeartbeatconfigFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder getHeartbeatconfigOrBuilder() {
         if (heartbeatconfigBuilder_ != null) {
           return heartbeatconfigBuilder_.getMessageOrBuilder();
@@ -4139,6 +5704,9 @@ public final class GoogleServicesFramework {
           return heartbeatconfig_;
         }
       }
+      /**
+       * <code>optional .HeartBeatConfig heartbeatconfig = 7;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfigOrBuilder> 
           getHeartbeatconfigFieldBuilder() {
@@ -4152,7 +5720,7 @@ public final class GoogleServicesFramework {
         }
         return heartbeatconfigBuilder_;
       }
-      
+
       // repeated .Setting settings = 4;
       private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> settings_ =
         java.util.Collections.emptyList();
@@ -4162,10 +5730,13 @@ public final class GoogleServicesFramework {
           bitField0_ |= 0x00000010;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> settingsBuilder_;
-      
+
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> getSettingsList() {
         if (settingsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(settings_);
@@ -4173,6 +5744,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public int getSettingsCount() {
         if (settingsBuilder_ == null) {
           return settings_.size();
@@ -4180,6 +5754,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting getSettings(int index) {
         if (settingsBuilder_ == null) {
           return settings_.get(index);
@@ -4187,6 +5764,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder setSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
@@ -4201,6 +5781,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder setSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -4212,6 +5795,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder addSettings(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
           if (value == null) {
@@ -4225,6 +5811,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder addSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting value) {
         if (settingsBuilder_ == null) {
@@ -4239,6 +5828,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder addSettings(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -4250,6 +5842,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder addSettings(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder builderForValue) {
         if (settingsBuilder_ == null) {
@@ -4261,6 +5856,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder addAllSettings(
           java.lang.Iterable<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting> values) {
         if (settingsBuilder_ == null) {
@@ -4272,6 +5870,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder clearSettings() {
         if (settingsBuilder_ == null) {
           settings_ = java.util.Collections.emptyList();
@@ -4282,6 +5883,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public Builder removeSettings(int index) {
         if (settingsBuilder_ == null) {
           ensureSettingsIsMutable();
@@ -4292,10 +5896,16 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder getSettingsBuilder(
           int index) {
         return getSettingsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder getSettingsOrBuilder(
           int index) {
         if (settingsBuilder_ == null) {
@@ -4303,6 +5913,9 @@ public final class GoogleServicesFramework {
           return settingsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.SettingOrBuilder> 
            getSettingsOrBuilderList() {
         if (settingsBuilder_ != null) {
@@ -4311,15 +5924,24 @@ public final class GoogleServicesFramework {
           return java.util.Collections.unmodifiableList(settings_);
         }
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder addSettingsBuilder() {
         return getSettingsFieldBuilder().addBuilder(
             com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder addSettingsBuilder(
           int index) {
         return getSettingsFieldBuilder().addBuilder(
             index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Setting settings = 4;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder> 
            getSettingsBuilderList() {
         return getSettingsFieldBuilder().getBuilderList();
@@ -4338,56 +5960,86 @@ public final class GoogleServicesFramework {
         }
         return settingsBuilder_;
       }
-      
+
       // optional int32 laststreamid = 6;
       private int laststreamid_ ;
+      /**
+       * <code>optional int32 laststreamid = 6;</code>
+       */
       public boolean hasLaststreamid() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
+      /**
+       * <code>optional int32 laststreamid = 6;</code>
+       */
       public int getLaststreamid() {
         return laststreamid_;
       }
+      /**
+       * <code>optional int32 laststreamid = 6;</code>
+       */
       public Builder setLaststreamid(int value) {
         bitField0_ |= 0x00000020;
         laststreamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 laststreamid = 6;</code>
+       */
       public Builder clearLaststreamid() {
         bitField0_ = (bitField0_ & ~0x00000020);
         laststreamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int32 streamid = 5;
       private int streamid_ ;
+      /**
+       * <code>optional int32 streamid = 5;</code>
+       */
       public boolean hasStreamid() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
+      /**
+       * <code>optional int32 streamid = 5;</code>
+       */
       public int getStreamid() {
         return streamid_;
       }
+      /**
+       * <code>optional int32 streamid = 5;</code>
+       */
       public Builder setStreamid(int value) {
         bitField0_ |= 0x00000040;
         streamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 streamid = 5;</code>
+       */
       public Builder clearStreamid() {
         bitField0_ = (bitField0_ & ~0x00000040);
         streamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional .XMPPError error = 3;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> errorBuilder_;
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public boolean hasError() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
         if (errorBuilder_ == null) {
           return error_;
@@ -4395,6 +6047,9 @@ public final class GoogleServicesFramework {
           return errorBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder setError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (value == null) {
@@ -4408,6 +6063,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000080;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder setError(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder builderForValue) {
         if (errorBuilder_ == null) {
@@ -4419,6 +6077,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000080;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder mergeError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (((bitField0_ & 0x00000080) == 0x00000080) &&
@@ -4435,6 +6096,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000080;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder clearError() {
         if (errorBuilder_ == null) {
           error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
@@ -4445,11 +6109,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000080);
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder getErrorBuilder() {
         bitField0_ |= 0x00000080;
         onChanged();
         return getErrorFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
         if (errorBuilder_ != null) {
           return errorBuilder_.getMessageOrBuilder();
@@ -4457,6 +6127,9 @@ public final class GoogleServicesFramework {
           return error_;
         }
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> 
           getErrorFieldBuilder() {
@@ -4470,167 +6143,341 @@ public final class GoogleServicesFramework {
         }
         return errorBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:LoginResponse)
     }
-    
+
     static {
       defaultInstance = new LoginResponse(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:LoginResponse)
   }
-  
+
   public interface XMPPErrorOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int32 code = 1;
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     boolean hasCode();
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     int getCode();
-    
+
     // optional string message = 2;
+    /**
+     * <code>optional string message = 2;</code>
+     */
     boolean hasMessage();
-    String getMessage();
-    
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+
     // optional string type = 3;
+    /**
+     * <code>optional string type = 3;</code>
+     */
     boolean hasType();
-    String getType();
-    
+    /**
+     * <code>optional string type = 3;</code>
+     */
+    java.lang.String getType();
+    /**
+     * <code>optional string type = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getTypeBytes();
+
     // repeated .Extension extension = 4;
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> 
         getExtensionList();
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension(int index);
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     int getExtensionCount();
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> 
         getExtensionOrBuilderList();
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code XMPPError}
+   */
   public static final class XMPPError extends
       com.google.protobuf.GeneratedMessage
       implements XMPPErrorOrBuilder {
     // Use XMPPError.newBuilder() to construct.
-    private XMPPError(Builder builder) {
+    private XMPPError(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private XMPPError(boolean noInit) {}
-    
+    private XMPPError(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final XMPPError defaultInstance;
     public static XMPPError getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public XMPPError getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private XMPPError(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              code_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              type_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                extension_ = new java.util.ArrayList<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              extension_.add(input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+          extension_ = java.util.Collections.unmodifiableList(extension_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<XMPPError> PARSER =
+        new com.google.protobuf.AbstractParser<XMPPError>() {
+      public XMPPError parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new XMPPError(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<XMPPError> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional int32 code = 1;
     public static final int CODE_FIELD_NUMBER = 1;
     private int code_;
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     public boolean hasCode() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     public int getCode() {
       return code_;
     }
-    
+
     // optional string message = 2;
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private java.lang.Object message_;
+    /**
+     * <code>optional string message = 2;</code>
+     */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getMessage() {
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    public java.lang.String getMessage() {
       java.lang.Object ref = message_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           message_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getMessageBytes() {
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
       java.lang.Object ref = message_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         message_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string type = 3;
     public static final int TYPE_FIELD_NUMBER = 3;
     private java.lang.Object type_;
+    /**
+     * <code>optional string type = 3;</code>
+     */
     public boolean hasType() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public String getType() {
+    /**
+     * <code>optional string type = 3;</code>
+     */
+    public java.lang.String getType() {
       java.lang.Object ref = type_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           type_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getTypeBytes() {
+    /**
+     * <code>optional string type = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTypeBytes() {
       java.lang.Object ref = type_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // repeated .Extension extension = 4;
     public static final int EXTENSION_FIELD_NUMBER = 4;
     private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> extension_;
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> getExtensionList() {
       return extension_;
     }
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> 
         getExtensionOrBuilderList() {
       return extension_;
     }
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     public int getExtensionCount() {
       return extension_.size();
     }
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension(int index) {
       return extension_.get(index);
     }
+    /**
+     * <code>repeated .Extension extension = 4;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder(
         int index) {
       return extension_.get(index);
     }
-    
+
     private void initFields() {
       code_ = 0;
       message_ = "";
@@ -4641,11 +6488,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -4663,12 +6510,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -4690,94 +6537,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code XMPPError}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder {
@@ -4785,18 +6621,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4808,7 +6647,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         code_ = 0;
@@ -4825,20 +6664,20 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_XMPPError_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError result = buildPartial();
         if (!result.isInitialized()) {
@@ -4846,17 +6685,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError(this);
         int from_bitField0_ = bitField0_;
@@ -4886,7 +6715,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError)other);
@@ -4895,17 +6724,21 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance()) return this;
         if (other.hasCode()) {
           setCode(other.getCode());
         }
         if (other.hasMessage()) {
-          setMessage(other.getMessage());
+          bitField0_ |= 0x00000002;
+          message_ = other.message_;
+          onChanged();
         }
         if (other.hasType()) {
-          setType(other.getType());
+          bitField0_ |= 0x00000004;
+          type_ = other.type_;
+          onChanged();
         }
         if (extensionBuilder_ == null) {
           if (!other.extension_.isEmpty()) {
@@ -4936,98 +6769,106 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              code_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              message_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              type_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addExtension(subBuilder.buildPartial());
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional int32 code = 1;
       private int code_ ;
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public boolean hasCode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public int getCode() {
         return code_;
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public Builder setCode(int value) {
         bitField0_ |= 0x00000001;
         code_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public Builder clearCode() {
         bitField0_ = (bitField0_ & ~0x00000001);
         code_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string message = 2;
       private java.lang.Object message_ = "";
+      /**
+       * <code>optional string message = 2;</code>
+       */
       public boolean hasMessage() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getMessage() {
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public java.lang.String getMessage() {
         java.lang.Object ref = message_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           message_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setMessage(String value) {
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5036,34 +6877,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string message = 2;</code>
+       */
       public Builder clearMessage() {
         bitField0_ = (bitField0_ & ~0x00000002);
         message_ = getDefaultInstance().getMessage();
         onChanged();
         return this;
       }
-      void setMessage(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         message_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string type = 3;
       private java.lang.Object type_ = "";
+      /**
+       * <code>optional string type = 3;</code>
+       */
       public boolean hasType() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getType() {
+      /**
+       * <code>optional string type = 3;</code>
+       */
+      public java.lang.String getType() {
         java.lang.Object ref = type_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           type_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setType(String value) {
+      /**
+       * <code>optional string type = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTypeBytes() {
+        java.lang.Object ref = type_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          type_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string type = 3;</code>
+       */
+      public Builder setType(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5072,18 +6951,29 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string type = 3;</code>
+       */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000004);
         type_ = getDefaultInstance().getType();
         onChanged();
         return this;
       }
-      void setType(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string type = 3;</code>
+       */
+      public Builder setTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         type_ = value;
         onChanged();
+        return this;
       }
-      
+
       // repeated .Extension extension = 4;
       private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> extension_ =
         java.util.Collections.emptyList();
@@ -5093,10 +6983,13 @@ public final class GoogleServicesFramework {
           bitField0_ |= 0x00000008;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> extensionBuilder_;
-      
+
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> getExtensionList() {
         if (extensionBuilder_ == null) {
           return java.util.Collections.unmodifiableList(extension_);
@@ -5104,6 +6997,9 @@ public final class GoogleServicesFramework {
           return extensionBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public int getExtensionCount() {
         if (extensionBuilder_ == null) {
           return extension_.size();
@@ -5111,6 +7007,9 @@ public final class GoogleServicesFramework {
           return extensionBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension(int index) {
         if (extensionBuilder_ == null) {
           return extension_.get(index);
@@ -5118,6 +7017,9 @@ public final class GoogleServicesFramework {
           return extensionBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder setExtension(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension value) {
         if (extensionBuilder_ == null) {
@@ -5132,6 +7034,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder setExtension(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder builderForValue) {
         if (extensionBuilder_ == null) {
@@ -5143,6 +7048,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder addExtension(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension value) {
         if (extensionBuilder_ == null) {
           if (value == null) {
@@ -5156,6 +7064,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder addExtension(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension value) {
         if (extensionBuilder_ == null) {
@@ -5170,6 +7081,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder addExtension(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder builderForValue) {
         if (extensionBuilder_ == null) {
@@ -5181,6 +7095,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder addExtension(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder builderForValue) {
         if (extensionBuilder_ == null) {
@@ -5192,6 +7109,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder addAllExtension(
           java.lang.Iterable<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension> values) {
         if (extensionBuilder_ == null) {
@@ -5203,6 +7123,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder clearExtension() {
         if (extensionBuilder_ == null) {
           extension_ = java.util.Collections.emptyList();
@@ -5213,6 +7136,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public Builder removeExtension(int index) {
         if (extensionBuilder_ == null) {
           ensureExtensionIsMutable();
@@ -5223,10 +7149,16 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder getExtensionBuilder(
           int index) {
         return getExtensionFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder(
           int index) {
         if (extensionBuilder_ == null) {
@@ -5234,6 +7166,9 @@ public final class GoogleServicesFramework {
           return extensionBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> 
            getExtensionOrBuilderList() {
         if (extensionBuilder_ != null) {
@@ -5242,15 +7177,24 @@ public final class GoogleServicesFramework {
           return java.util.Collections.unmodifiableList(extension_);
         }
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder addExtensionBuilder() {
         return getExtensionFieldBuilder().addBuilder(
             com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder addExtensionBuilder(
           int index) {
         return getExtensionFieldBuilder().addBuilder(
             index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance());
       }
+      /**
+       * <code>repeated .Extension extension = 4;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder> 
            getExtensionBuilderList() {
         return getExtensionFieldBuilder().getBuilderList();
@@ -5269,100 +7213,206 @@ public final class GoogleServicesFramework {
         }
         return extensionBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:XMPPError)
     }
-    
+
     static {
       defaultInstance = new XMPPError(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:XMPPError)
   }
-  
+
   public interface ExtensionOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int32 code = 1;
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     boolean hasCode();
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     int getCode();
-    
+
     // optional string message = 2;
+    /**
+     * <code>optional string message = 2;</code>
+     */
     boolean hasMessage();
-    String getMessage();
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
   }
+  /**
+   * Protobuf type {@code Extension}
+   */
   public static final class Extension extends
       com.google.protobuf.GeneratedMessage
       implements ExtensionOrBuilder {
     // Use Extension.newBuilder() to construct.
-    private Extension(Builder builder) {
+    private Extension(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private Extension(boolean noInit) {}
-    
+    private Extension(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final Extension defaultInstance;
     public static Extension getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public Extension getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Extension(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              code_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<Extension> PARSER =
+        new com.google.protobuf.AbstractParser<Extension>() {
+      public Extension parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Extension(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Extension> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional int32 code = 1;
     public static final int CODE_FIELD_NUMBER = 1;
     private int code_;
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     public boolean hasCode() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>optional int32 code = 1;</code>
+     */
     public int getCode() {
       return code_;
     }
-    
+
     // optional string message = 2;
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private java.lang.Object message_;
+    /**
+     * <code>optional string message = 2;</code>
+     */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getMessage() {
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    public java.lang.String getMessage() {
       java.lang.Object ref = message_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           message_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getMessageBytes() {
+    /**
+     * <code>optional string message = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
       java.lang.Object ref = message_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         message_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     private void initFields() {
       code_ = 0;
       message_ = "";
@@ -5371,11 +7421,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -5387,12 +7437,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -5406,94 +7456,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code Extension}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder {
@@ -5501,18 +7540,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5523,7 +7565,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         code_ = 0;
@@ -5532,20 +7574,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Extension_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension result = buildPartial();
         if (!result.isInitialized()) {
@@ -5553,17 +7595,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension(this);
         int from_bitField0_ = bitField0_;
@@ -5580,7 +7612,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension)other);
@@ -5589,99 +7621,120 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance()) return this;
         if (other.hasCode()) {
           setCode(other.getCode());
         }
         if (other.hasMessage()) {
-          setMessage(other.getMessage());
+          bitField0_ |= 0x00000002;
+          message_ = other.message_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              code_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              message_ = input.readBytes();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional int32 code = 1;
       private int code_ ;
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public boolean hasCode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public int getCode() {
         return code_;
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public Builder setCode(int value) {
         bitField0_ |= 0x00000001;
         code_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 code = 1;</code>
+       */
       public Builder clearCode() {
         bitField0_ = (bitField0_ & ~0x00000001);
         code_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string message = 2;
       private java.lang.Object message_ = "";
+      /**
+       * <code>optional string message = 2;</code>
+       */
       public boolean hasMessage() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getMessage() {
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public java.lang.String getMessage() {
         java.lang.Object ref = message_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           message_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setMessage(String value) {
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5690,586 +7743,176 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string message = 2;</code>
+       */
       public Builder clearMessage() {
         bitField0_ = (bitField0_ & ~0x00000002);
         message_ = getDefaultInstance().getMessage();
         onChanged();
         return this;
       }
-      void setMessage(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string message = 2;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         message_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:Extension)
     }
-    
+
     static {
       defaultInstance = new Extension(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:Extension)
   }
-  
+
   public interface BindAccountRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string packetid = 1;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string domain = 2;
+    /**
+     * <code>optional string domain = 2;</code>
+     */
     boolean hasDomain();
-    String getDomain();
-    
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    java.lang.String getDomain();
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDomainBytes();
+
     // optional string user = 3;
+    /**
+     * <code>optional string user = 3;</code>
+     */
     boolean hasUser();
-    String getUser();
-    
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    java.lang.String getUser();
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getUserBytes();
+
     // optional string resource = 4;
+    /**
+     * <code>optional string resource = 4;</code>
+     */
     boolean hasResource();
-    String getResource();
-    
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    java.lang.String getResource();
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getResourceBytes();
+
     // optional int64 accountid = 9;
+    /**
+     * <code>optional int64 accountid = 9;</code>
+     */
     boolean hasAccountid();
+    /**
+     * <code>optional int64 accountid = 9;</code>
+     */
     long getAccountid();
-    
+
     // optional string token = 5;
+    /**
+     * <code>optional string token = 5;</code>
+     */
     boolean hasToken();
-    String getToken();
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    java.lang.String getToken();
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getTokenBytes();
   }
+  /**
+   * Protobuf type {@code BindAccountRequest}
+   */
   public static final class BindAccountRequest extends
       com.google.protobuf.GeneratedMessage
       implements BindAccountRequestOrBuilder {
     // Use BindAccountRequest.newBuilder() to construct.
-    private BindAccountRequest(Builder builder) {
+    private BindAccountRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private BindAccountRequest(boolean noInit) {}
-    
+    private BindAccountRequest(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final BindAccountRequest defaultInstance;
     public static BindAccountRequest getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public BindAccountRequest getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // optional string packetid = 1;
-    public static final int PACKETID_FIELD_NUMBER = 1;
-    private java.lang.Object packetid_;
-    public boolean hasPacketid() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getPacketid() {
-      java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          packetid_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getPacketidBytes() {
-      java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        packetid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string domain = 2;
-    public static final int DOMAIN_FIELD_NUMBER = 2;
-    private java.lang.Object domain_;
-    public boolean hasDomain() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getDomain() {
-      java.lang.Object ref = domain_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          domain_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getDomainBytes() {
-      java.lang.Object ref = domain_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        domain_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string user = 3;
-    public static final int USER_FIELD_NUMBER = 3;
-    private java.lang.Object user_;
-    public boolean hasUser() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getUser() {
-      java.lang.Object ref = user_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          user_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getUserBytes() {
-      java.lang.Object ref = user_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        user_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string resource = 4;
-    public static final int RESOURCE_FIELD_NUMBER = 4;
-    private java.lang.Object resource_;
-    public boolean hasResource() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public String getResource() {
-      java.lang.Object ref = resource_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          resource_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getResourceBytes() {
-      java.lang.Object ref = resource_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        resource_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional int64 accountid = 9;
-    public static final int ACCOUNTID_FIELD_NUMBER = 9;
-    private long accountid_;
-    public boolean hasAccountid() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    public long getAccountid() {
-      return accountid_;
-    }
-    
-    // optional string token = 5;
-    public static final int TOKEN_FIELD_NUMBER = 5;
-    private java.lang.Object token_;
-    public boolean hasToken() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    public String getToken() {
-      java.lang.Object ref = token_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          token_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getTokenBytes() {
-      java.lang.Object ref = token_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        token_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    private void initFields() {
-      packetid_ = "";
-      domain_ = "";
-      user_ = "";
-      resource_ = "";
-      accountid_ = 0L;
-      token_ = "";
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getPacketidBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getDomainBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getUserBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getResourceBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(5, getTokenBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt64(9, accountid_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getPacketidBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getDomainBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getUserBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getResourceBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getTokenBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(9, accountid_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+    private BindAccountRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_fieldAccessorTable;
-      }
-      
-      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        packetid_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        domain_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        user_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        resource_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        accountid_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        token_ = "";
-        bitField0_ = (bitField0_ & ~0x00000020);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.getDescriptor();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest getDefaultInstanceForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.getDefaultInstance();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest build() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest buildPartial() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.packetid_ = packetid_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.domain_ = domain_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.user_ = user_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.resource_ = resource_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.accountid_ = accountid_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.token_ = token_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest) {
-          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest other) {
-        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.getDefaultInstance()) return this;
-        if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
-        }
-        if (other.hasDomain()) {
-          setDomain(other.getDomain());
-        }
-        if (other.hasUser()) {
-          setUser(other.getUser());
-        }
-        if (other.hasResource()) {
-          setResource(other.getResource());
-        }
-        if (other.hasAccountid()) {
-          setAccountid(other.getAccountid());
-        }
-        if (other.hasToken()) {
-          setToken(other.getToken());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -6305,26 +7948,640 @@ public final class GoogleServicesFramework {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<BindAccountRequest> PARSER =
+        new com.google.protobuf.AbstractParser<BindAccountRequest>() {
+      public BindAccountRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BindAccountRequest(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BindAccountRequest> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional string packetid = 1;
+    public static final int PACKETID_FIELD_NUMBER = 1;
+    private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public boolean hasPacketid() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public java.lang.String getPacketid() {
+      java.lang.Object ref = packetid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          packetid_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
+      java.lang.Object ref = packetid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        packetid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string domain = 2;
+    public static final int DOMAIN_FIELD_NUMBER = 2;
+    private java.lang.Object domain_;
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    public boolean hasDomain() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    public java.lang.String getDomain() {
+      java.lang.Object ref = domain_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          domain_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string domain = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDomainBytes() {
+      java.lang.Object ref = domain_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        domain_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string user = 3;
+    public static final int USER_FIELD_NUMBER = 3;
+    private java.lang.Object user_;
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    public boolean hasUser() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    public java.lang.String getUser() {
+      java.lang.Object ref = user_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          user_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string user = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getUserBytes() {
+      java.lang.Object ref = user_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        user_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string resource = 4;
+    public static final int RESOURCE_FIELD_NUMBER = 4;
+    private java.lang.Object resource_;
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    public boolean hasResource() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    public java.lang.String getResource() {
+      java.lang.Object ref = resource_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          resource_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string resource = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getResourceBytes() {
+      java.lang.Object ref = resource_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        resource_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int64 accountid = 9;
+    public static final int ACCOUNTID_FIELD_NUMBER = 9;
+    private long accountid_;
+    /**
+     * <code>optional int64 accountid = 9;</code>
+     */
+    public boolean hasAccountid() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional int64 accountid = 9;</code>
+     */
+    public long getAccountid() {
+      return accountid_;
+    }
+
+    // optional string token = 5;
+    public static final int TOKEN_FIELD_NUMBER = 5;
+    private java.lang.Object token_;
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    public boolean hasToken() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    public java.lang.String getToken() {
+      java.lang.Object ref = token_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          token_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string token = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTokenBytes() {
+      java.lang.Object ref = token_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        token_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      packetid_ = "";
+      domain_ = "";
+      user_ = "";
+      resource_ = "";
+      accountid_ = 0L;
+      token_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getPacketidBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getDomainBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getUserBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getResourceBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(5, getTokenBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt64(9, accountid_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getPacketidBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getDomainBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getUserBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getResourceBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getTokenBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(9, accountid_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code BindAccountRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.Builder.class);
+      }
+
+      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        packetid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        domain_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        user_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        resource_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        accountid_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        token_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountRequest_descriptor;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest getDefaultInstanceForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.getDefaultInstance();
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest build() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest buildPartial() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.packetid_ = packetid_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.domain_ = domain_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.user_ = user_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.resource_ = resource_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.accountid_ = accountid_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.token_ = token_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest) {
+          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest other) {
+        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.getDefaultInstance()) return this;
+        if (other.hasPacketid()) {
+          bitField0_ |= 0x00000001;
+          packetid_ = other.packetid_;
+          onChanged();
+        }
+        if (other.hasDomain()) {
+          bitField0_ |= 0x00000002;
+          domain_ = other.domain_;
+          onChanged();
+        }
+        if (other.hasUser()) {
+          bitField0_ |= 0x00000004;
+          user_ = other.user_;
+          onChanged();
+        }
+        if (other.hasResource()) {
+          bitField0_ |= 0x00000008;
+          resource_ = other.resource_;
+          onChanged();
+        }
+        if (other.hasAccountid()) {
+          setAccountid(other.getAccountid());
+        }
+        if (other.hasToken()) {
+          bitField0_ |= 0x00000020;
+          token_ = other.token_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // optional string packetid = 1;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6333,34 +8590,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string domain = 2;
       private java.lang.Object domain_ = "";
+      /**
+       * <code>optional string domain = 2;</code>
+       */
       public boolean hasDomain() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getDomain() {
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public java.lang.String getDomain() {
         java.lang.Object ref = domain_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           domain_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setDomain(String value) {
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDomainBytes() {
+        java.lang.Object ref = domain_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          domain_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public Builder setDomain(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6369,34 +8664,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string domain = 2;</code>
+       */
       public Builder clearDomain() {
         bitField0_ = (bitField0_ & ~0x00000002);
         domain_ = getDefaultInstance().getDomain();
         onChanged();
         return this;
       }
-      void setDomain(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string domain = 2;</code>
+       */
+      public Builder setDomainBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         domain_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string user = 3;
       private java.lang.Object user_ = "";
+      /**
+       * <code>optional string user = 3;</code>
+       */
       public boolean hasUser() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getUser() {
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public java.lang.String getUser() {
         java.lang.Object ref = user_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           user_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setUser(String value) {
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getUserBytes() {
+        java.lang.Object ref = user_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          user_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public Builder setUser(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6405,34 +8738,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string user = 3;</code>
+       */
       public Builder clearUser() {
         bitField0_ = (bitField0_ & ~0x00000004);
         user_ = getDefaultInstance().getUser();
         onChanged();
         return this;
       }
-      void setUser(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string user = 3;</code>
+       */
+      public Builder setUserBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         user_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string resource = 4;
       private java.lang.Object resource_ = "";
+      /**
+       * <code>optional string resource = 4;</code>
+       */
       public boolean hasResource() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-      public String getResource() {
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public java.lang.String getResource() {
         java.lang.Object ref = resource_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           resource_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setResource(String value) {
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getResourceBytes() {
+        java.lang.Object ref = resource_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          resource_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public Builder setResource(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6441,55 +8812,105 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string resource = 4;</code>
+       */
       public Builder clearResource() {
         bitField0_ = (bitField0_ & ~0x00000008);
         resource_ = getDefaultInstance().getResource();
         onChanged();
         return this;
       }
-      void setResource(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
+      /**
+       * <code>optional string resource = 4;</code>
+       */
+      public Builder setResourceBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
         resource_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int64 accountid = 9;
       private long accountid_ ;
+      /**
+       * <code>optional int64 accountid = 9;</code>
+       */
       public boolean hasAccountid() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>optional int64 accountid = 9;</code>
+       */
       public long getAccountid() {
         return accountid_;
       }
+      /**
+       * <code>optional int64 accountid = 9;</code>
+       */
       public Builder setAccountid(long value) {
         bitField0_ |= 0x00000010;
         accountid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 accountid = 9;</code>
+       */
       public Builder clearAccountid() {
         bitField0_ = (bitField0_ & ~0x00000010);
         accountid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional string token = 5;
       private java.lang.Object token_ = "";
+      /**
+       * <code>optional string token = 5;</code>
+       */
       public boolean hasToken() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      public String getToken() {
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public java.lang.String getToken() {
         java.lang.Object ref = token_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           token_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setToken(String value) {
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTokenBytes() {
+        java.lang.Object ref = token_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          token_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public Builder setToken(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6498,179 +8919,371 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string token = 5;</code>
+       */
       public Builder clearToken() {
         bitField0_ = (bitField0_ & ~0x00000020);
         token_ = getDefaultInstance().getToken();
         onChanged();
         return this;
       }
-      void setToken(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+      /**
+       * <code>optional string token = 5;</code>
+       */
+      public Builder setTokenBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
         token_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:BindAccountRequest)
     }
-    
+
     static {
       defaultInstance = new BindAccountRequest(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:BindAccountRequest)
   }
-  
+
   public interface BindAccountResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string packetid = 1;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string jid = 2;
+    /**
+     * <code>optional string jid = 2;</code>
+     */
     boolean hasJid();
-    String getJid();
-    
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    java.lang.String getJid();
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getJidBytes();
+
     // optional int32 laststreamid = 5;
+    /**
+     * <code>optional int32 laststreamid = 5;</code>
+     */
     boolean hasLaststreamid();
+    /**
+     * <code>optional int32 laststreamid = 5;</code>
+     */
     int getLaststreamid();
-    
+
     // optional int32 streamid = 4;
+    /**
+     * <code>optional int32 streamid = 4;</code>
+     */
     boolean hasStreamid();
+    /**
+     * <code>optional int32 streamid = 4;</code>
+     */
     int getStreamid();
-    
+
     // optional .XMPPError error = 3;
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     boolean hasError();
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError();
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder();
   }
+  /**
+   * Protobuf type {@code BindAccountResponse}
+   */
   public static final class BindAccountResponse extends
       com.google.protobuf.GeneratedMessage
       implements BindAccountResponseOrBuilder {
     // Use BindAccountResponse.newBuilder() to construct.
-    private BindAccountResponse(Builder builder) {
+    private BindAccountResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private BindAccountResponse(boolean noInit) {}
-    
+    private BindAccountResponse(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final BindAccountResponse defaultInstance;
     public static BindAccountResponse getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public BindAccountResponse getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private BindAccountResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              packetid_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              jid_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                subBuilder = error_.toBuilder();
+              }
+              error_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(error_);
+                error_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000010;
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              streamid_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000004;
+              laststreamid_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<BindAccountResponse> PARSER =
+        new com.google.protobuf.AbstractParser<BindAccountResponse>() {
+      public BindAccountResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BindAccountResponse(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BindAccountResponse> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional string packetid = 1;
     public static final int PACKETID_FIELD_NUMBER = 1;
     private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
     public boolean hasPacketid() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public String getPacketid() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public java.lang.String getPacketid() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           packetid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPacketidBytes() {
+    /**
+     * <code>optional string packetid = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         packetid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string jid = 2;
     public static final int JID_FIELD_NUMBER = 2;
     private java.lang.Object jid_;
+    /**
+     * <code>optional string jid = 2;</code>
+     */
     public boolean hasJid() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getJid() {
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    public java.lang.String getJid() {
       java.lang.Object ref = jid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           jid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getJidBytes() {
+    /**
+     * <code>optional string jid = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getJidBytes() {
       java.lang.Object ref = jid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         jid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional int32 laststreamid = 5;
     public static final int LASTSTREAMID_FIELD_NUMBER = 5;
     private int laststreamid_;
+    /**
+     * <code>optional int32 laststreamid = 5;</code>
+     */
     public boolean hasLaststreamid() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>optional int32 laststreamid = 5;</code>
+     */
     public int getLaststreamid() {
       return laststreamid_;
     }
-    
+
     // optional int32 streamid = 4;
     public static final int STREAMID_FIELD_NUMBER = 4;
     private int streamid_;
+    /**
+     * <code>optional int32 streamid = 4;</code>
+     */
     public boolean hasStreamid() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
+    /**
+     * <code>optional int32 streamid = 4;</code>
+     */
     public int getStreamid() {
       return streamid_;
     }
-    
+
     // optional .XMPPError error = 3;
     public static final int ERROR_FIELD_NUMBER = 3;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_;
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public boolean hasError() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
       return error_;
     }
+    /**
+     * <code>optional .XMPPError error = 3;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
       return error_;
     }
-    
+
     private void initFields() {
       packetid_ = "";
       jid_ = "";
@@ -6682,11 +9295,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -6707,12 +9320,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -6738,94 +9351,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code BindAccountResponse}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponseOrBuilder {
@@ -6833,18 +9435,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6856,7 +9461,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         packetid_ = "";
@@ -6875,20 +9480,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_BindAccountResponse_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse result = buildPartial();
         if (!result.isInitialized()) {
@@ -6896,17 +9501,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse(this);
         int from_bitField0_ = bitField0_;
@@ -6939,7 +9534,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse)other);
@@ -6948,14 +9543,18 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.getDefaultInstance()) return this;
         if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
+          bitField0_ |= 0x00000001;
+          packetid_ = other.packetid_;
+          onChanged();
         }
         if (other.hasJid()) {
-          setJid(other.getJid());
+          bitField0_ |= 0x00000002;
+          jid_ = other.jid_;
+          onChanged();
         }
         if (other.hasLaststreamid()) {
           setLaststreamid(other.getLaststreamid());
@@ -6969,85 +9568,73 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              packetid_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              jid_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.newBuilder();
-              if (hasError()) {
-                subBuilder.mergeFrom(getError());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setError(subBuilder.buildPartial());
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              streamid_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000004;
-              laststreamid_ = input.readInt32();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional string packetid = 1;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7056,34 +9643,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string packetid = 1;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string jid = 2;
       private java.lang.Object jid_ = "";
+      /**
+       * <code>optional string jid = 2;</code>
+       */
       public boolean hasJid() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getJid() {
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public java.lang.String getJid() {
         java.lang.Object ref = jid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           jid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setJid(String value) {
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getJidBytes() {
+        java.lang.Object ref = jid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          jid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public Builder setJid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7092,67 +9717,108 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string jid = 2;</code>
+       */
       public Builder clearJid() {
         bitField0_ = (bitField0_ & ~0x00000002);
         jid_ = getDefaultInstance().getJid();
         onChanged();
         return this;
       }
-      void setJid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string jid = 2;</code>
+       */
+      public Builder setJidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         jid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int32 laststreamid = 5;
       private int laststreamid_ ;
+      /**
+       * <code>optional int32 laststreamid = 5;</code>
+       */
       public boolean hasLaststreamid() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>optional int32 laststreamid = 5;</code>
+       */
       public int getLaststreamid() {
         return laststreamid_;
       }
+      /**
+       * <code>optional int32 laststreamid = 5;</code>
+       */
       public Builder setLaststreamid(int value) {
         bitField0_ |= 0x00000004;
         laststreamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 laststreamid = 5;</code>
+       */
       public Builder clearLaststreamid() {
         bitField0_ = (bitField0_ & ~0x00000004);
         laststreamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int32 streamid = 4;
       private int streamid_ ;
+      /**
+       * <code>optional int32 streamid = 4;</code>
+       */
       public boolean hasStreamid() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>optional int32 streamid = 4;</code>
+       */
       public int getStreamid() {
         return streamid_;
       }
+      /**
+       * <code>optional int32 streamid = 4;</code>
+       */
       public Builder setStreamid(int value) {
         bitField0_ |= 0x00000008;
         streamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 streamid = 4;</code>
+       */
       public Builder clearStreamid() {
         bitField0_ = (bitField0_ & ~0x00000008);
         streamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional .XMPPError error = 3;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> errorBuilder_;
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public boolean hasError() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
         if (errorBuilder_ == null) {
           return error_;
@@ -7160,6 +9826,9 @@ public final class GoogleServicesFramework {
           return errorBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder setError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (value == null) {
@@ -7173,6 +9842,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000010;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder setError(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder builderForValue) {
         if (errorBuilder_ == null) {
@@ -7184,6 +9856,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000010;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder mergeError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (((bitField0_ & 0x00000010) == 0x00000010) &&
@@ -7200,6 +9875,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000010;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public Builder clearError() {
         if (errorBuilder_ == null) {
           error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
@@ -7210,11 +9888,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder getErrorBuilder() {
         bitField0_ |= 0x00000010;
         onChanged();
         return getErrorFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
         if (errorBuilder_ != null) {
           return errorBuilder_.getMessageOrBuilder();
@@ -7222,6 +9906,9 @@ public final class GoogleServicesFramework {
           return error_;
         }
       }
+      /**
+       * <code>optional .XMPPError error = 3;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> 
           getErrorFieldBuilder() {
@@ -7235,164 +9922,214 @@ public final class GoogleServicesFramework {
         }
         return errorBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:BindAccountResponse)
     }
-    
+
     static {
       defaultInstance = new BindAccountResponse(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:BindAccountResponse)
   }
-  
+
   public interface CloseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
   }
+  /**
+   * Protobuf type {@code Close}
+   */
   public static final class Close extends
       com.google.protobuf.GeneratedMessage
       implements CloseOrBuilder {
     // Use Close.newBuilder() to construct.
-    private Close(Builder builder) {
+    private Close(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private Close(boolean noInit) {}
-    
+    private Close(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final Close defaultInstance;
     public static Close getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public Close getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Close(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<Close> PARSER =
+        new com.google.protobuf.AbstractParser<Close>() {
+      public Close parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Close(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Close> getParserForType() {
+      return PARSER;
+    }
+
     private void initFields() {
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code Close}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.CloseOrBuilder {
@@ -7400,18 +10137,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7422,25 +10162,25 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_Close_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close result = buildPartial();
         if (!result.isInitialized()) {
@@ -7448,23 +10188,13 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close(this);
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close)other);
@@ -7473,202 +10203,242 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:Close)
+    }
+
+    static {
+      defaultInstance = new Close(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:Close)
+  }
+
+  public interface HeartbeatAckOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code HeartbeatAck}
+   */
+  public static final class HeartbeatAck extends
+      com.google.protobuf.GeneratedMessage
+      implements HeartbeatAckOrBuilder {
+    // Use HeartbeatAck.newBuilder() to construct.
+    private HeartbeatAck(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private HeartbeatAck(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final HeartbeatAck defaultInstance;
+    public static HeartbeatAck getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public HeartbeatAck getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private HeartbeatAck(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
-      
-      // @@protoc_insertion_point(builder_scope:Close)
     }
-    
-    static {
-      defaultInstance = new Close(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:Close)
-  }
-  
-  public interface HeartbeatAckOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-  }
-  public static final class HeartbeatAck extends
-      com.google.protobuf.GeneratedMessage
-      implements HeartbeatAckOrBuilder {
-    // Use HeartbeatAck.newBuilder() to construct.
-    private HeartbeatAck(Builder builder) {
-      super(builder);
-    }
-    private HeartbeatAck(boolean noInit) {}
-    
-    private static final HeartbeatAck defaultInstance;
-    public static HeartbeatAck getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public HeartbeatAck getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<HeartbeatAck> PARSER =
+        new com.google.protobuf.AbstractParser<HeartbeatAck>() {
+      public HeartbeatAck parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new HeartbeatAck(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<HeartbeatAck> getParserForType() {
+      return PARSER;
+    }
+
     private void initFields() {
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code HeartbeatAck}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAckOrBuilder {
@@ -7676,18 +10446,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7698,25 +10471,25 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_HeartbeatAck_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck result = buildPartial();
         if (!result.isInitialized()) {
@@ -7724,23 +10497,13 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck(this);
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck)other);
@@ -7749,499 +10512,903 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
-      
+
       // @@protoc_insertion_point(builder_scope:HeartbeatAck)
     }
-    
+
     static {
       defaultInstance = new HeartbeatAck(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:HeartbeatAck)
   }
-  
+
   public interface DataMessageStanzaOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int64 rmqid = 1;
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     boolean hasRmqid();
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     long getRmqid();
-    
+
     // optional string packetid = 2;
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string from = 3;
+    /**
+     * <code>optional string from = 3;</code>
+     */
     boolean hasFrom();
-    String getFrom();
-    
+    /**
+     * <code>optional string from = 3;</code>
+     */
+    java.lang.String getFrom();
+    /**
+     * <code>optional string from = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getFromBytes();
+
     // optional string to = 4;
+    /**
+     * <code>optional string to = 4;</code>
+     */
     boolean hasTo();
-    String getTo();
-    
+    /**
+     * <code>optional string to = 4;</code>
+     */
+    java.lang.String getTo();
+    /**
+     * <code>optional string to = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getToBytes();
+
     // optional string category = 5;
+    /**
+     * <code>optional string category = 5;</code>
+     */
     boolean hasCategory();
-    String getCategory();
-    
+    /**
+     * <code>optional string category = 5;</code>
+     */
+    java.lang.String getCategory();
+    /**
+     * <code>optional string category = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getCategoryBytes();
+
     // optional string token = 6;
+    /**
+     * <code>optional string token = 6;</code>
+     */
     boolean hasToken();
-    String getToken();
-    
+    /**
+     * <code>optional string token = 6;</code>
+     */
+    java.lang.String getToken();
+    /**
+     * <code>optional string token = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getTokenBytes();
+
     // repeated .AppData appdata = 7;
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> 
         getAppdataList();
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData getAppdata(int index);
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     int getAppdataCount();
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder> 
         getAppdataOrBuilderList();
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder getAppdataOrBuilder(
         int index);
-    
+
     // optional bool fromtrustedserver = 8;
+    /**
+     * <code>optional bool fromtrustedserver = 8;</code>
+     */
     boolean hasFromtrustedserver();
+    /**
+     * <code>optional bool fromtrustedserver = 8;</code>
+     */
     boolean getFromtrustedserver();
-    
+
     // optional string rmq2id = 9;
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
     boolean hasRmq2Id();
-    String getRmq2Id();
-    
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
+    java.lang.String getRmq2Id();
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
+    com.google.protobuf.ByteString
+        getRmq2IdBytes();
+
     // optional int32 streamid = 10;
+    /**
+     * <code>optional int32 streamid = 10;</code>
+     */
     boolean hasStreamid();
+    /**
+     * <code>optional int32 streamid = 10;</code>
+     */
     int getStreamid();
-    
+
     // optional int32 laststreamid = 11;
+    /**
+     * <code>optional int32 laststreamid = 11;</code>
+     */
     boolean hasLaststreamid();
+    /**
+     * <code>optional int32 laststreamid = 11;</code>
+     */
     int getLaststreamid();
-    
+
     // optional string permission = 12;
+    /**
+     * <code>optional string permission = 12;</code>
+     */
     boolean hasPermission();
-    String getPermission();
-    
+    /**
+     * <code>optional string permission = 12;</code>
+     */
+    java.lang.String getPermission();
+    /**
+     * <code>optional string permission = 12;</code>
+     */
+    com.google.protobuf.ByteString
+        getPermissionBytes();
+
     // optional string regid = 13;
+    /**
+     * <code>optional string regid = 13;</code>
+     */
     boolean hasRegid();
-    String getRegid();
-    
+    /**
+     * <code>optional string regid = 13;</code>
+     */
+    java.lang.String getRegid();
+    /**
+     * <code>optional string regid = 13;</code>
+     */
+    com.google.protobuf.ByteString
+        getRegidBytes();
+
     // optional string pkgsignature = 14;
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
     boolean hasPkgsignature();
-    String getPkgsignature();
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
+    java.lang.String getPkgsignature();
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
+    com.google.protobuf.ByteString
+        getPkgsignatureBytes();
   }
+  /**
+   * Protobuf type {@code DataMessageStanza}
+   */
   public static final class DataMessageStanza extends
       com.google.protobuf.GeneratedMessage
       implements DataMessageStanzaOrBuilder {
     // Use DataMessageStanza.newBuilder() to construct.
-    private DataMessageStanza(Builder builder) {
+    private DataMessageStanza(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private DataMessageStanza(boolean noInit) {}
-    
+    private DataMessageStanza(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final DataMessageStanza defaultInstance;
     public static DataMessageStanza getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public DataMessageStanza getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private DataMessageStanza(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              rmqid_ = input.readInt64();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              packetid_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              from_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              to_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              category_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              token_ = input.readBytes();
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+                appdata_ = new java.util.ArrayList<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData>();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              appdata_.add(input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.PARSER, extensionRegistry));
+              break;
+            }
+            case 64: {
+              bitField0_ |= 0x00000040;
+              fromtrustedserver_ = input.readBool();
+              break;
+            }
+            case 74: {
+              bitField0_ |= 0x00000080;
+              rmq2Id_ = input.readBytes();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000100;
+              streamid_ = input.readInt32();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000200;
+              laststreamid_ = input.readInt32();
+              break;
+            }
+            case 98: {
+              bitField0_ |= 0x00000400;
+              permission_ = input.readBytes();
+              break;
+            }
+            case 106: {
+              bitField0_ |= 0x00000800;
+              regid_ = input.readBytes();
+              break;
+            }
+            case 114: {
+              bitField0_ |= 0x00001000;
+              pkgsignature_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+          appdata_ = java.util.Collections.unmodifiableList(appdata_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<DataMessageStanza> PARSER =
+        new com.google.protobuf.AbstractParser<DataMessageStanza>() {
+      public DataMessageStanza parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new DataMessageStanza(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<DataMessageStanza> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional int64 rmqid = 1;
     public static final int RMQID_FIELD_NUMBER = 1;
     private long rmqid_;
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     public boolean hasRmqid() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     public long getRmqid() {
       return rmqid_;
     }
-    
+
     // optional string packetid = 2;
     public static final int PACKETID_FIELD_NUMBER = 2;
     private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
     public boolean hasPacketid() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getPacketid() {
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
+    public java.lang.String getPacketid() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           packetid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPacketidBytes() {
+    /**
+     * <code>optional string packetid = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         packetid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string from = 3;
     public static final int FROM_FIELD_NUMBER = 3;
     private java.lang.Object from_;
+    /**
+     * <code>optional string from = 3;</code>
+     */
     public boolean hasFrom() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public String getFrom() {
+    /**
+     * <code>optional string from = 3;</code>
+     */
+    public java.lang.String getFrom() {
       java.lang.Object ref = from_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           from_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getFromBytes() {
+    /**
+     * <code>optional string from = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFromBytes() {
       java.lang.Object ref = from_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         from_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string to = 4;
     public static final int TO_FIELD_NUMBER = 4;
     private java.lang.Object to_;
+    /**
+     * <code>optional string to = 4;</code>
+     */
     public boolean hasTo() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-    public String getTo() {
+    /**
+     * <code>optional string to = 4;</code>
+     */
+    public java.lang.String getTo() {
       java.lang.Object ref = to_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           to_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getToBytes() {
+    /**
+     * <code>optional string to = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getToBytes() {
       java.lang.Object ref = to_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         to_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string category = 5;
     public static final int CATEGORY_FIELD_NUMBER = 5;
     private java.lang.Object category_;
+    /**
+     * <code>optional string category = 5;</code>
+     */
     public boolean hasCategory() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
-    public String getCategory() {
+    /**
+     * <code>optional string category = 5;</code>
+     */
+    public java.lang.String getCategory() {
       java.lang.Object ref = category_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           category_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getCategoryBytes() {
+    /**
+     * <code>optional string category = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getCategoryBytes() {
       java.lang.Object ref = category_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         category_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string token = 6;
     public static final int TOKEN_FIELD_NUMBER = 6;
     private java.lang.Object token_;
+    /**
+     * <code>optional string token = 6;</code>
+     */
     public boolean hasToken() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
-    public String getToken() {
+    /**
+     * <code>optional string token = 6;</code>
+     */
+    public java.lang.String getToken() {
       java.lang.Object ref = token_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           token_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getTokenBytes() {
+    /**
+     * <code>optional string token = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTokenBytes() {
       java.lang.Object ref = token_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         token_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // repeated .AppData appdata = 7;
     public static final int APPDATA_FIELD_NUMBER = 7;
     private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> appdata_;
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> getAppdataList() {
       return appdata_;
     }
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder> 
         getAppdataOrBuilderList() {
       return appdata_;
     }
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     public int getAppdataCount() {
       return appdata_.size();
     }
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData getAppdata(int index) {
       return appdata_.get(index);
     }
+    /**
+     * <code>repeated .AppData appdata = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder getAppdataOrBuilder(
         int index) {
       return appdata_.get(index);
     }
-    
+
     // optional bool fromtrustedserver = 8;
     public static final int FROMTRUSTEDSERVER_FIELD_NUMBER = 8;
     private boolean fromtrustedserver_;
+    /**
+     * <code>optional bool fromtrustedserver = 8;</code>
+     */
     public boolean hasFromtrustedserver() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
+    /**
+     * <code>optional bool fromtrustedserver = 8;</code>
+     */
     public boolean getFromtrustedserver() {
       return fromtrustedserver_;
     }
-    
+
     // optional string rmq2id = 9;
     public static final int RMQ2ID_FIELD_NUMBER = 9;
     private java.lang.Object rmq2Id_;
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
     public boolean hasRmq2Id() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
-    public String getRmq2Id() {
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
+    public java.lang.String getRmq2Id() {
       java.lang.Object ref = rmq2Id_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           rmq2Id_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getRmq2IdBytes() {
+    /**
+     * <code>optional string rmq2id = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRmq2IdBytes() {
       java.lang.Object ref = rmq2Id_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         rmq2Id_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional int32 streamid = 10;
     public static final int STREAMID_FIELD_NUMBER = 10;
     private int streamid_;
+    /**
+     * <code>optional int32 streamid = 10;</code>
+     */
     public boolean hasStreamid() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
+    /**
+     * <code>optional int32 streamid = 10;</code>
+     */
     public int getStreamid() {
       return streamid_;
     }
-    
+
     // optional int32 laststreamid = 11;
     public static final int LASTSTREAMID_FIELD_NUMBER = 11;
     private int laststreamid_;
+    /**
+     * <code>optional int32 laststreamid = 11;</code>
+     */
     public boolean hasLaststreamid() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
+    /**
+     * <code>optional int32 laststreamid = 11;</code>
+     */
     public int getLaststreamid() {
       return laststreamid_;
     }
-    
+
     // optional string permission = 12;
     public static final int PERMISSION_FIELD_NUMBER = 12;
     private java.lang.Object permission_;
+    /**
+     * <code>optional string permission = 12;</code>
+     */
     public boolean hasPermission() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
-    public String getPermission() {
+    /**
+     * <code>optional string permission = 12;</code>
+     */
+    public java.lang.String getPermission() {
       java.lang.Object ref = permission_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           permission_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPermissionBytes() {
+    /**
+     * <code>optional string permission = 12;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPermissionBytes() {
       java.lang.Object ref = permission_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         permission_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string regid = 13;
     public static final int REGID_FIELD_NUMBER = 13;
     private java.lang.Object regid_;
+    /**
+     * <code>optional string regid = 13;</code>
+     */
     public boolean hasRegid() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
-    public String getRegid() {
+    /**
+     * <code>optional string regid = 13;</code>
+     */
+    public java.lang.String getRegid() {
       java.lang.Object ref = regid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           regid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getRegidBytes() {
+    /**
+     * <code>optional string regid = 13;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRegidBytes() {
       java.lang.Object ref = regid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         regid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string pkgsignature = 14;
     public static final int PKGSIGNATURE_FIELD_NUMBER = 14;
     private java.lang.Object pkgsignature_;
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
     public boolean hasPkgsignature() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
-    public String getPkgsignature() {
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
+    public java.lang.String getPkgsignature() {
       java.lang.Object ref = pkgsignature_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           pkgsignature_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPkgsignatureBytes() {
+    /**
+     * <code>optional string pkgsignature = 14;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPkgsignatureBytes() {
       java.lang.Object ref = pkgsignature_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         pkgsignature_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     private void initFields() {
       rmqid_ = 0L;
       packetid_ = "";
@@ -8262,11 +11429,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -8314,12 +11481,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -8381,94 +11548,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code DataMessageStanza}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanzaOrBuilder {
@@ -8476,18 +11632,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8499,7 +11658,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         rmqid_ = 0L;
@@ -8536,20 +11695,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00002000);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_DataMessageStanza_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza result = buildPartial();
         if (!result.isInitialized()) {
@@ -8557,17 +11716,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza(this);
         int from_bitField0_ = bitField0_;
@@ -8637,7 +11786,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza)other);
@@ -8646,26 +11795,36 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.getDefaultInstance()) return this;
         if (other.hasRmqid()) {
           setRmqid(other.getRmqid());
         }
         if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
+          bitField0_ |= 0x00000002;
+          packetid_ = other.packetid_;
+          onChanged();
         }
         if (other.hasFrom()) {
-          setFrom(other.getFrom());
+          bitField0_ |= 0x00000004;
+          from_ = other.from_;
+          onChanged();
         }
         if (other.hasTo()) {
-          setTo(other.getTo());
+          bitField0_ |= 0x00000008;
+          to_ = other.to_;
+          onChanged();
         }
         if (other.hasCategory()) {
-          setCategory(other.getCategory());
+          bitField0_ |= 0x00000010;
+          category_ = other.category_;
+          onChanged();
         }
         if (other.hasToken()) {
-          setToken(other.getToken());
+          bitField0_ |= 0x00000020;
+          token_ = other.token_;
+          onChanged();
         }
         if (appdataBuilder_ == null) {
           if (!other.appdata_.isEmpty()) {
@@ -8697,7 +11856,9 @@ public final class GoogleServicesFramework {
           setFromtrustedserver(other.getFromtrustedserver());
         }
         if (other.hasRmq2Id()) {
-          setRmq2Id(other.getRmq2Id());
+          bitField0_ |= 0x00000100;
+          rmq2Id_ = other.rmq2Id_;
+          onChanged();
         }
         if (other.hasStreamid()) {
           setStreamid(other.getStreamid());
@@ -8706,159 +11867,123 @@ public final class GoogleServicesFramework {
           setLaststreamid(other.getLaststreamid());
         }
         if (other.hasPermission()) {
-          setPermission(other.getPermission());
+          bitField0_ |= 0x00000800;
+          permission_ = other.permission_;
+          onChanged();
         }
         if (other.hasRegid()) {
-          setRegid(other.getRegid());
+          bitField0_ |= 0x00001000;
+          regid_ = other.regid_;
+          onChanged();
         }
         if (other.hasPkgsignature()) {
-          setPkgsignature(other.getPkgsignature());
+          bitField0_ |= 0x00002000;
+          pkgsignature_ = other.pkgsignature_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              rmqid_ = input.readInt64();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              packetid_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              from_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              to_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              category_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              token_ = input.readBytes();
-              break;
-            }
-            case 58: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAppdata(subBuilder.buildPartial());
-              break;
-            }
-            case 64: {
-              bitField0_ |= 0x00000080;
-              fromtrustedserver_ = input.readBool();
-              break;
-            }
-            case 74: {
-              bitField0_ |= 0x00000100;
-              rmq2Id_ = input.readBytes();
-              break;
-            }
-            case 80: {
-              bitField0_ |= 0x00000200;
-              streamid_ = input.readInt32();
-              break;
-            }
-            case 88: {
-              bitField0_ |= 0x00000400;
-              laststreamid_ = input.readInt32();
-              break;
-            }
-            case 98: {
-              bitField0_ |= 0x00000800;
-              permission_ = input.readBytes();
-              break;
-            }
-            case 106: {
-              bitField0_ |= 0x00001000;
-              regid_ = input.readBytes();
-              break;
-            }
-            case 114: {
-              bitField0_ |= 0x00002000;
-              pkgsignature_ = input.readBytes();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional int64 rmqid = 1;
       private long rmqid_ ;
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public boolean hasRmqid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public long getRmqid() {
         return rmqid_;
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public Builder setRmqid(long value) {
         bitField0_ |= 0x00000001;
         rmqid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public Builder clearRmqid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         rmqid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional string packetid = 2;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8867,34 +11992,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000002);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string packetid = 2;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string from = 3;
       private java.lang.Object from_ = "";
+      /**
+       * <code>optional string from = 3;</code>
+       */
       public boolean hasFrom() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getFrom() {
+      /**
+       * <code>optional string from = 3;</code>
+       */
+      public java.lang.String getFrom() {
         java.lang.Object ref = from_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           from_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setFrom(String value) {
+      /**
+       * <code>optional string from = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFromBytes() {
+        java.lang.Object ref = from_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          from_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string from = 3;</code>
+       */
+      public Builder setFrom(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8903,34 +12066,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string from = 3;</code>
+       */
       public Builder clearFrom() {
         bitField0_ = (bitField0_ & ~0x00000004);
         from_ = getDefaultInstance().getFrom();
         onChanged();
         return this;
       }
-      void setFrom(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string from = 3;</code>
+       */
+      public Builder setFromBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         from_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string to = 4;
       private java.lang.Object to_ = "";
+      /**
+       * <code>optional string to = 4;</code>
+       */
       public boolean hasTo() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-      public String getTo() {
+      /**
+       * <code>optional string to = 4;</code>
+       */
+      public java.lang.String getTo() {
         java.lang.Object ref = to_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           to_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setTo(String value) {
+      /**
+       * <code>optional string to = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getToBytes() {
+        java.lang.Object ref = to_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          to_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string to = 4;</code>
+       */
+      public Builder setTo(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8939,34 +12140,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string to = 4;</code>
+       */
       public Builder clearTo() {
         bitField0_ = (bitField0_ & ~0x00000008);
         to_ = getDefaultInstance().getTo();
         onChanged();
         return this;
       }
-      void setTo(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
+      /**
+       * <code>optional string to = 4;</code>
+       */
+      public Builder setToBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
         to_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string category = 5;
       private java.lang.Object category_ = "";
+      /**
+       * <code>optional string category = 5;</code>
+       */
       public boolean hasCategory() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-      public String getCategory() {
+      /**
+       * <code>optional string category = 5;</code>
+       */
+      public java.lang.String getCategory() {
         java.lang.Object ref = category_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           category_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setCategory(String value) {
+      /**
+       * <code>optional string category = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getCategoryBytes() {
+        java.lang.Object ref = category_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          category_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string category = 5;</code>
+       */
+      public Builder setCategory(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8975,34 +12214,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string category = 5;</code>
+       */
       public Builder clearCategory() {
         bitField0_ = (bitField0_ & ~0x00000010);
         category_ = getDefaultInstance().getCategory();
         onChanged();
         return this;
       }
-      void setCategory(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
+      /**
+       * <code>optional string category = 5;</code>
+       */
+      public Builder setCategoryBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
         category_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string token = 6;
       private java.lang.Object token_ = "";
+      /**
+       * <code>optional string token = 6;</code>
+       */
       public boolean hasToken() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      public String getToken() {
+      /**
+       * <code>optional string token = 6;</code>
+       */
+      public java.lang.String getToken() {
         java.lang.Object ref = token_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           token_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setToken(String value) {
+      /**
+       * <code>optional string token = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTokenBytes() {
+        java.lang.Object ref = token_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          token_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string token = 6;</code>
+       */
+      public Builder setToken(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9011,18 +12288,29 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string token = 6;</code>
+       */
       public Builder clearToken() {
         bitField0_ = (bitField0_ & ~0x00000020);
         token_ = getDefaultInstance().getToken();
         onChanged();
         return this;
       }
-      void setToken(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+      /**
+       * <code>optional string token = 6;</code>
+       */
+      public Builder setTokenBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
         token_ = value;
         onChanged();
+        return this;
       }
-      
+
       // repeated .AppData appdata = 7;
       private java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> appdata_ =
         java.util.Collections.emptyList();
@@ -9032,10 +12320,13 @@ public final class GoogleServicesFramework {
           bitField0_ |= 0x00000040;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder> appdataBuilder_;
-      
+
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> getAppdataList() {
         if (appdataBuilder_ == null) {
           return java.util.Collections.unmodifiableList(appdata_);
@@ -9043,6 +12334,9 @@ public final class GoogleServicesFramework {
           return appdataBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public int getAppdataCount() {
         if (appdataBuilder_ == null) {
           return appdata_.size();
@@ -9050,6 +12344,9 @@ public final class GoogleServicesFramework {
           return appdataBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData getAppdata(int index) {
         if (appdataBuilder_ == null) {
           return appdata_.get(index);
@@ -9057,6 +12354,9 @@ public final class GoogleServicesFramework {
           return appdataBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder setAppdata(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData value) {
         if (appdataBuilder_ == null) {
@@ -9071,6 +12371,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder setAppdata(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder builderForValue) {
         if (appdataBuilder_ == null) {
@@ -9082,6 +12385,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder addAppdata(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData value) {
         if (appdataBuilder_ == null) {
           if (value == null) {
@@ -9095,6 +12401,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder addAppdata(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData value) {
         if (appdataBuilder_ == null) {
@@ -9109,6 +12418,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder addAppdata(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder builderForValue) {
         if (appdataBuilder_ == null) {
@@ -9120,6 +12432,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder addAppdata(
           int index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder builderForValue) {
         if (appdataBuilder_ == null) {
@@ -9131,6 +12446,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder addAllAppdata(
           java.lang.Iterable<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData> values) {
         if (appdataBuilder_ == null) {
@@ -9142,6 +12460,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder clearAppdata() {
         if (appdataBuilder_ == null) {
           appdata_ = java.util.Collections.emptyList();
@@ -9152,6 +12473,9 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public Builder removeAppdata(int index) {
         if (appdataBuilder_ == null) {
           ensureAppdataIsMutable();
@@ -9162,10 +12486,16 @@ public final class GoogleServicesFramework {
         }
         return this;
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder getAppdataBuilder(
           int index) {
         return getAppdataFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder getAppdataOrBuilder(
           int index) {
         if (appdataBuilder_ == null) {
@@ -9173,6 +12503,9 @@ public final class GoogleServicesFramework {
           return appdataBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public java.util.List<? extends com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder> 
            getAppdataOrBuilderList() {
         if (appdataBuilder_ != null) {
@@ -9181,15 +12514,24 @@ public final class GoogleServicesFramework {
           return java.util.Collections.unmodifiableList(appdata_);
         }
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder addAppdataBuilder() {
         return getAppdataFieldBuilder().addBuilder(
             com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.getDefaultInstance());
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder addAppdataBuilder(
           int index) {
         return getAppdataFieldBuilder().addBuilder(
             index, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.getDefaultInstance());
       }
+      /**
+       * <code>repeated .AppData appdata = 7;</code>
+       */
       public java.util.List<com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder> 
            getAppdataBuilderList() {
         return getAppdataFieldBuilder().getBuilderList();
@@ -9208,44 +12550,83 @@ public final class GoogleServicesFramework {
         }
         return appdataBuilder_;
       }
-      
+
       // optional bool fromtrustedserver = 8;
       private boolean fromtrustedserver_ ;
+      /**
+       * <code>optional bool fromtrustedserver = 8;</code>
+       */
       public boolean hasFromtrustedserver() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
+      /**
+       * <code>optional bool fromtrustedserver = 8;</code>
+       */
       public boolean getFromtrustedserver() {
         return fromtrustedserver_;
       }
+      /**
+       * <code>optional bool fromtrustedserver = 8;</code>
+       */
       public Builder setFromtrustedserver(boolean value) {
         bitField0_ |= 0x00000080;
         fromtrustedserver_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool fromtrustedserver = 8;</code>
+       */
       public Builder clearFromtrustedserver() {
         bitField0_ = (bitField0_ & ~0x00000080);
         fromtrustedserver_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional string rmq2id = 9;
       private java.lang.Object rmq2Id_ = "";
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
       public boolean hasRmq2Id() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
-      public String getRmq2Id() {
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
+      public java.lang.String getRmq2Id() {
         java.lang.Object ref = rmq2Id_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           rmq2Id_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setRmq2Id(String value) {
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRmq2IdBytes() {
+        java.lang.Object ref = rmq2Id_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          rmq2Id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
+      public Builder setRmq2Id(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9254,76 +12635,138 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
       public Builder clearRmq2Id() {
         bitField0_ = (bitField0_ & ~0x00000100);
         rmq2Id_ = getDefaultInstance().getRmq2Id();
         onChanged();
         return this;
       }
-      void setRmq2Id(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000100;
+      /**
+       * <code>optional string rmq2id = 9;</code>
+       */
+      public Builder setRmq2IdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000100;
         rmq2Id_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int32 streamid = 10;
       private int streamid_ ;
+      /**
+       * <code>optional int32 streamid = 10;</code>
+       */
       public boolean hasStreamid() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
+      /**
+       * <code>optional int32 streamid = 10;</code>
+       */
       public int getStreamid() {
         return streamid_;
       }
+      /**
+       * <code>optional int32 streamid = 10;</code>
+       */
       public Builder setStreamid(int value) {
         bitField0_ |= 0x00000200;
         streamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 streamid = 10;</code>
+       */
       public Builder clearStreamid() {
         bitField0_ = (bitField0_ & ~0x00000200);
         streamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int32 laststreamid = 11;
       private int laststreamid_ ;
+      /**
+       * <code>optional int32 laststreamid = 11;</code>
+       */
       public boolean hasLaststreamid() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
+      /**
+       * <code>optional int32 laststreamid = 11;</code>
+       */
       public int getLaststreamid() {
         return laststreamid_;
       }
+      /**
+       * <code>optional int32 laststreamid = 11;</code>
+       */
       public Builder setLaststreamid(int value) {
         bitField0_ |= 0x00000400;
         laststreamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 laststreamid = 11;</code>
+       */
       public Builder clearLaststreamid() {
         bitField0_ = (bitField0_ & ~0x00000400);
         laststreamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string permission = 12;
       private java.lang.Object permission_ = "";
+      /**
+       * <code>optional string permission = 12;</code>
+       */
       public boolean hasPermission() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
-      public String getPermission() {
+      /**
+       * <code>optional string permission = 12;</code>
+       */
+      public java.lang.String getPermission() {
         java.lang.Object ref = permission_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           permission_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPermission(String value) {
+      /**
+       * <code>optional string permission = 12;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPermissionBytes() {
+        java.lang.Object ref = permission_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          permission_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string permission = 12;</code>
+       */
+      public Builder setPermission(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9332,34 +12775,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string permission = 12;</code>
+       */
       public Builder clearPermission() {
         bitField0_ = (bitField0_ & ~0x00000800);
         permission_ = getDefaultInstance().getPermission();
         onChanged();
         return this;
       }
-      void setPermission(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000800;
+      /**
+       * <code>optional string permission = 12;</code>
+       */
+      public Builder setPermissionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000800;
         permission_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string regid = 13;
       private java.lang.Object regid_ = "";
+      /**
+       * <code>optional string regid = 13;</code>
+       */
       public boolean hasRegid() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
-      public String getRegid() {
+      /**
+       * <code>optional string regid = 13;</code>
+       */
+      public java.lang.String getRegid() {
         java.lang.Object ref = regid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           regid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setRegid(String value) {
+      /**
+       * <code>optional string regid = 13;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRegidBytes() {
+        java.lang.Object ref = regid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          regid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string regid = 13;</code>
+       */
+      public Builder setRegid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9368,34 +12849,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string regid = 13;</code>
+       */
       public Builder clearRegid() {
         bitField0_ = (bitField0_ & ~0x00001000);
         regid_ = getDefaultInstance().getRegid();
         onChanged();
         return this;
       }
-      void setRegid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00001000;
+      /**
+       * <code>optional string regid = 13;</code>
+       */
+      public Builder setRegidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00001000;
         regid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string pkgsignature = 14;
       private java.lang.Object pkgsignature_ = "";
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
       public boolean hasPkgsignature() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
-      public String getPkgsignature() {
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
+      public java.lang.String getPkgsignature() {
         java.lang.Object ref = pkgsignature_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           pkgsignature_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPkgsignature(String value) {
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPkgsignatureBytes() {
+        java.lang.Object ref = pkgsignature_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pkgsignature_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
+      public Builder setPkgsignature(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9404,133 +12923,260 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
       public Builder clearPkgsignature() {
         bitField0_ = (bitField0_ & ~0x00002000);
         pkgsignature_ = getDefaultInstance().getPkgsignature();
         onChanged();
         return this;
       }
-      void setPkgsignature(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00002000;
+      /**
+       * <code>optional string pkgsignature = 14;</code>
+       */
+      public Builder setPkgsignatureBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00002000;
         pkgsignature_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:DataMessageStanza)
     }
-    
+
     static {
       defaultInstance = new DataMessageStanza(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:DataMessageStanza)
   }
-  
+
   public interface AppDataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional string key = 1;
+    /**
+     * <code>optional string key = 1;</code>
+     */
     boolean hasKey();
-    String getKey();
-    
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
     // optional string value = 2;
+    /**
+     * <code>optional string value = 2;</code>
+     */
     boolean hasValue();
-    String getValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    java.lang.String getValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getValueBytes();
   }
+  /**
+   * Protobuf type {@code AppData}
+   */
   public static final class AppData extends
       com.google.protobuf.GeneratedMessage
       implements AppDataOrBuilder {
     // Use AppData.newBuilder() to construct.
-    private AppData(Builder builder) {
+    private AppData(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private AppData(boolean noInit) {}
-    
+    private AppData(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final AppData defaultInstance;
     public static AppData getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public AppData getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private AppData(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              value_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<AppData> PARSER =
+        new com.google.protobuf.AbstractParser<AppData>() {
+      public AppData parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new AppData(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<AppData> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
+    /**
+     * <code>optional string key = 1;</code>
+     */
     public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public String getKey() {
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public java.lang.String getKey() {
       java.lang.Object ref = key_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           key_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getKeyBytes() {
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
       java.lang.Object ref = key_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         key_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
     private java.lang.Object value_;
+    /**
+     * <code>optional string value = 2;</code>
+     */
     public boolean hasValue() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getValue() {
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public java.lang.String getValue() {
       java.lang.Object ref = value_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           value_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getValueBytes() {
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getValueBytes() {
       java.lang.Object ref = value_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         value_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     private void initFields() {
       key_ = "";
       value_ = "";
@@ -9539,11 +13185,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -9555,12 +13201,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -9574,94 +13220,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code AppData}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppDataOrBuilder {
@@ -9669,18 +13304,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9691,7 +13329,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         key_ = "";
@@ -9700,20 +13338,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_AppData_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData result = buildPartial();
         if (!result.isInitialized()) {
@@ -9721,17 +13359,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData(this);
         int from_bitField0_ = bitField0_;
@@ -9748,7 +13376,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData)other);
@@ -9757,78 +13385,89 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.getDefaultInstance()) return this;
         if (other.hasKey()) {
-          setKey(other.getKey());
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
         }
         if (other.hasValue()) {
-          setValue(other.getValue());
+          bitField0_ |= 0x00000002;
+          value_ = other.value_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              value_ = input.readBytes();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional string key = 1;
       private java.lang.Object key_ = "";
+      /**
+       * <code>optional string key = 1;</code>
+       */
       public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public String getKey() {
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public java.lang.String getKey() {
         java.lang.Object ref = key_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           key_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setKey(String value) {
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9837,34 +13476,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string key = 1;</code>
+       */
       public Builder clearKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
         key_ = getDefaultInstance().getKey();
         onChanged();
         return this;
       }
-      void setKey(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         key_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string value = 2;
       private java.lang.Object value_ = "";
+      /**
+       * <code>optional string value = 2;</code>
+       */
       public boolean hasValue() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getValue() {
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public java.lang.String getValue() {
         java.lang.Object ref = value_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           value_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setValue(String value) {
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getValueBytes() {
+        java.lang.Object ref = value_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          value_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValue(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9873,311 +13550,639 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string value = 2;</code>
+       */
       public Builder clearValue() {
         bitField0_ = (bitField0_ & ~0x00000002);
         value_ = getDefaultInstance().getValue();
         onChanged();
         return this;
       }
-      void setValue(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValueBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         value_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:AppData)
     }
-    
+
     static {
       defaultInstance = new AppData(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:AppData)
   }
-  
+
   public interface IQStanzaOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int64 rmqid = 1;
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     boolean hasRmqid();
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     long getRmqid();
-    
+
     // optional int32 type = 2;
+    /**
+     * <code>optional int32 type = 2;</code>
+     */
     boolean hasType();
+    /**
+     * <code>optional int32 type = 2;</code>
+     */
     int getType();
-    
+
     // optional string packetid = 3;
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
     boolean hasPacketid();
-    String getPacketid();
-    
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
+    java.lang.String getPacketid();
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPacketidBytes();
+
     // optional string from = 4;
+    /**
+     * <code>optional string from = 4;</code>
+     */
     boolean hasFrom();
-    String getFrom();
-    
+    /**
+     * <code>optional string from = 4;</code>
+     */
+    java.lang.String getFrom();
+    /**
+     * <code>optional string from = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getFromBytes();
+
     // optional string to = 5;
+    /**
+     * <code>optional string to = 5;</code>
+     */
     boolean hasTo();
-    String getTo();
-    
+    /**
+     * <code>optional string to = 5;</code>
+     */
+    java.lang.String getTo();
+    /**
+     * <code>optional string to = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getToBytes();
+
     // optional .XMPPError error = 6;
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     boolean hasError();
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError();
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder();
-    
+
     // optional .Extension extension = 7;
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     boolean hasExtension();
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension();
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder();
-    
+
     // optional string rmq2id = 8;
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
     boolean hasRmq2Id();
-    String getRmq2Id();
-    
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
+    java.lang.String getRmq2Id();
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
+    com.google.protobuf.ByteString
+        getRmq2IdBytes();
+
     // optional int32 streamid = 9;
+    /**
+     * <code>optional int32 streamid = 9;</code>
+     */
     boolean hasStreamid();
+    /**
+     * <code>optional int32 streamid = 9;</code>
+     */
     int getStreamid();
-    
+
     // optional int32 laststreamid = 10;
+    /**
+     * <code>optional int32 laststreamid = 10;</code>
+     */
     boolean hasLaststreamid();
+    /**
+     * <code>optional int32 laststreamid = 10;</code>
+     */
     int getLaststreamid();
-    
+
     // optional int64 accountid = 11;
+    /**
+     * <code>optional int64 accountid = 11;</code>
+     */
     boolean hasAccountid();
+    /**
+     * <code>optional int64 accountid = 11;</code>
+     */
     long getAccountid();
   }
+  /**
+   * Protobuf type {@code IQStanza}
+   */
   public static final class IQStanza extends
       com.google.protobuf.GeneratedMessage
       implements IQStanzaOrBuilder {
     // Use IQStanza.newBuilder() to construct.
-    private IQStanza(Builder builder) {
+    private IQStanza(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private IQStanza(boolean noInit) {}
-    
+    private IQStanza(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final IQStanza defaultInstance;
     public static IQStanza getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public IQStanza getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private IQStanza(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              rmqid_ = input.readInt64();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              type_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              packetid_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              from_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              to_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000020) == 0x00000020)) {
+                subBuilder = error_.toBuilder();
+              }
+              error_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(error_);
+                error_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000020;
+              break;
+            }
+            case 58: {
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000040) == 0x00000040)) {
+                subBuilder = extension_.toBuilder();
+              }
+              extension_ = input.readMessage(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(extension_);
+                extension_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000040;
+              break;
+            }
+            case 66: {
+              bitField0_ |= 0x00000080;
+              rmq2Id_ = input.readBytes();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000100;
+              streamid_ = input.readInt32();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000200;
+              laststreamid_ = input.readInt32();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000400;
+              accountid_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<IQStanza> PARSER =
+        new com.google.protobuf.AbstractParser<IQStanza>() {
+      public IQStanza parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new IQStanza(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<IQStanza> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional int64 rmqid = 1;
     public static final int RMQID_FIELD_NUMBER = 1;
     private long rmqid_;
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     public boolean hasRmqid() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>optional int64 rmqid = 1;</code>
+     */
     public long getRmqid() {
       return rmqid_;
     }
-    
+
     // optional int32 type = 2;
     public static final int TYPE_FIELD_NUMBER = 2;
     private int type_;
+    /**
+     * <code>optional int32 type = 2;</code>
+     */
     public boolean hasType() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>optional int32 type = 2;</code>
+     */
     public int getType() {
       return type_;
     }
-    
+
     // optional string packetid = 3;
     public static final int PACKETID_FIELD_NUMBER = 3;
     private java.lang.Object packetid_;
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
     public boolean hasPacketid() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public String getPacketid() {
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
+    public java.lang.String getPacketid() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           packetid_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPacketidBytes() {
+    /**
+     * <code>optional string packetid = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPacketidBytes() {
       java.lang.Object ref = packetid_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         packetid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string from = 4;
     public static final int FROM_FIELD_NUMBER = 4;
     private java.lang.Object from_;
+    /**
+     * <code>optional string from = 4;</code>
+     */
     public boolean hasFrom() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-    public String getFrom() {
+    /**
+     * <code>optional string from = 4;</code>
+     */
+    public java.lang.String getFrom() {
       java.lang.Object ref = from_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           from_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getFromBytes() {
+    /**
+     * <code>optional string from = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFromBytes() {
       java.lang.Object ref = from_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         from_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional string to = 5;
     public static final int TO_FIELD_NUMBER = 5;
     private java.lang.Object to_;
+    /**
+     * <code>optional string to = 5;</code>
+     */
     public boolean hasTo() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
-    public String getTo() {
+    /**
+     * <code>optional string to = 5;</code>
+     */
+    public java.lang.String getTo() {
       java.lang.Object ref = to_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           to_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getToBytes() {
+    /**
+     * <code>optional string to = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getToBytes() {
       java.lang.Object ref = to_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         to_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional .XMPPError error = 6;
     public static final int ERROR_FIELD_NUMBER = 6;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_;
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     public boolean hasError() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
       return error_;
     }
+    /**
+     * <code>optional .XMPPError error = 6;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
       return error_;
     }
-    
+
     // optional .Extension extension = 7;
     public static final int EXTENSION_FIELD_NUMBER = 7;
     private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension extension_;
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     public boolean hasExtension() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension() {
       return extension_;
     }
+    /**
+     * <code>optional .Extension extension = 7;</code>
+     */
     public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder() {
       return extension_;
     }
-    
+
     // optional string rmq2id = 8;
     public static final int RMQ2ID_FIELD_NUMBER = 8;
     private java.lang.Object rmq2Id_;
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
     public boolean hasRmq2Id() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
-    public String getRmq2Id() {
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
+    public java.lang.String getRmq2Id() {
       java.lang.Object ref = rmq2Id_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           rmq2Id_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getRmq2IdBytes() {
+    /**
+     * <code>optional string rmq2id = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRmq2IdBytes() {
       java.lang.Object ref = rmq2Id_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         rmq2Id_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // optional int32 streamid = 9;
     public static final int STREAMID_FIELD_NUMBER = 9;
     private int streamid_;
+    /**
+     * <code>optional int32 streamid = 9;</code>
+     */
     public boolean hasStreamid() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
+    /**
+     * <code>optional int32 streamid = 9;</code>
+     */
     public int getStreamid() {
       return streamid_;
     }
-    
+
     // optional int32 laststreamid = 10;
     public static final int LASTSTREAMID_FIELD_NUMBER = 10;
     private int laststreamid_;
+    /**
+     * <code>optional int32 laststreamid = 10;</code>
+     */
     public boolean hasLaststreamid() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
+    /**
+     * <code>optional int32 laststreamid = 10;</code>
+     */
     public int getLaststreamid() {
       return laststreamid_;
     }
-    
+
     // optional int64 accountid = 11;
     public static final int ACCOUNTID_FIELD_NUMBER = 11;
     private long accountid_;
+    /**
+     * <code>optional int64 accountid = 11;</code>
+     */
     public boolean hasAccountid() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
+    /**
+     * <code>optional int64 accountid = 11;</code>
+     */
     public long getAccountid() {
       return accountid_;
     }
-    
+
     private void initFields() {
       rmqid_ = 0L;
       type_ = 0;
@@ -10195,11 +14200,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -10238,12 +14243,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -10293,94 +14298,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code IQStanza}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanzaOrBuilder {
@@ -10388,18 +14382,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10412,7 +14409,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         rmqid_ = 0L;
@@ -10447,20 +14444,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_IQStanza_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza result = buildPartial();
         if (!result.isInitialized()) {
@@ -10468,17 +14465,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza(this);
         int from_bitField0_ = bitField0_;
@@ -10539,7 +14526,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza)other);
@@ -10548,7 +14535,7 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.getDefaultInstance()) return this;
         if (other.hasRmqid()) {
@@ -10558,13 +14545,19 @@ public final class GoogleServicesFramework {
           setType(other.getType());
         }
         if (other.hasPacketid()) {
-          setPacketid(other.getPacketid());
+          bitField0_ |= 0x00000004;
+          packetid_ = other.packetid_;
+          onChanged();
         }
         if (other.hasFrom()) {
-          setFrom(other.getFrom());
+          bitField0_ |= 0x00000008;
+          from_ = other.from_;
+          onChanged();
         }
         if (other.hasTo()) {
-          setTo(other.getTo());
+          bitField0_ |= 0x00000010;
+          to_ = other.to_;
+          onChanged();
         }
         if (other.hasError()) {
           mergeError(other.getError());
@@ -10573,7 +14566,9 @@ public final class GoogleServicesFramework {
           mergeExtension(other.getExtension());
         }
         if (other.hasRmq2Id()) {
-          setRmq2Id(other.getRmq2Id());
+          bitField0_ |= 0x00000080;
+          rmq2Id_ = other.rmq2Id_;
+          onChanged();
         }
         if (other.hasStreamid()) {
           setStreamid(other.getStreamid());
@@ -10587,161 +14582,139 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              rmqid_ = input.readInt64();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              type_ = input.readInt32();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              packetid_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              from_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              to_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.newBuilder();
-              if (hasError()) {
-                subBuilder.mergeFrom(getError());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setError(subBuilder.buildPartial());
-              break;
-            }
-            case 58: {
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder subBuilder = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.newBuilder();
-              if (hasExtension()) {
-                subBuilder.mergeFrom(getExtension());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setExtension(subBuilder.buildPartial());
-              break;
-            }
-            case 66: {
-              bitField0_ |= 0x00000080;
-              rmq2Id_ = input.readBytes();
-              break;
-            }
-            case 72: {
-              bitField0_ |= 0x00000100;
-              streamid_ = input.readInt32();
-              break;
-            }
-            case 80: {
-              bitField0_ |= 0x00000200;
-              laststreamid_ = input.readInt32();
-              break;
-            }
-            case 88: {
-              bitField0_ |= 0x00000400;
-              accountid_ = input.readInt64();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional int64 rmqid = 1;
       private long rmqid_ ;
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public boolean hasRmqid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public long getRmqid() {
         return rmqid_;
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public Builder setRmqid(long value) {
         bitField0_ |= 0x00000001;
         rmqid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 rmqid = 1;</code>
+       */
       public Builder clearRmqid() {
         bitField0_ = (bitField0_ & ~0x00000001);
         rmqid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // optional int32 type = 2;
       private int type_ ;
+      /**
+       * <code>optional int32 type = 2;</code>
+       */
       public boolean hasType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>optional int32 type = 2;</code>
+       */
       public int getType() {
         return type_;
       }
+      /**
+       * <code>optional int32 type = 2;</code>
+       */
       public Builder setType(int value) {
         bitField0_ |= 0x00000002;
         type_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 type = 2;</code>
+       */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000002);
         type_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string packetid = 3;
       private java.lang.Object packetid_ = "";
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
       public boolean hasPacketid() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getPacketid() {
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
+      public java.lang.String getPacketid() {
         java.lang.Object ref = packetid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           packetid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setPacketid(String value) {
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPacketidBytes() {
+        java.lang.Object ref = packetid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packetid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
+      public Builder setPacketid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10750,34 +14723,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
       public Builder clearPacketid() {
         bitField0_ = (bitField0_ & ~0x00000004);
         packetid_ = getDefaultInstance().getPacketid();
         onChanged();
         return this;
       }
-      void setPacketid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string packetid = 3;</code>
+       */
+      public Builder setPacketidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         packetid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string from = 4;
       private java.lang.Object from_ = "";
+      /**
+       * <code>optional string from = 4;</code>
+       */
       public boolean hasFrom() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-      public String getFrom() {
+      /**
+       * <code>optional string from = 4;</code>
+       */
+      public java.lang.String getFrom() {
         java.lang.Object ref = from_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           from_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setFrom(String value) {
+      /**
+       * <code>optional string from = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFromBytes() {
+        java.lang.Object ref = from_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          from_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string from = 4;</code>
+       */
+      public Builder setFrom(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10786,34 +14797,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string from = 4;</code>
+       */
       public Builder clearFrom() {
         bitField0_ = (bitField0_ & ~0x00000008);
         from_ = getDefaultInstance().getFrom();
         onChanged();
         return this;
       }
-      void setFrom(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
+      /**
+       * <code>optional string from = 4;</code>
+       */
+      public Builder setFromBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
         from_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string to = 5;
       private java.lang.Object to_ = "";
+      /**
+       * <code>optional string to = 5;</code>
+       */
       public boolean hasTo() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-      public String getTo() {
+      /**
+       * <code>optional string to = 5;</code>
+       */
+      public java.lang.String getTo() {
         java.lang.Object ref = to_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           to_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setTo(String value) {
+      /**
+       * <code>optional string to = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getToBytes() {
+        java.lang.Object ref = to_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          to_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string to = 5;</code>
+       */
+      public Builder setTo(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10822,25 +14871,42 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string to = 5;</code>
+       */
       public Builder clearTo() {
         bitField0_ = (bitField0_ & ~0x00000010);
         to_ = getDefaultInstance().getTo();
         onChanged();
         return this;
       }
-      void setTo(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
+      /**
+       * <code>optional string to = 5;</code>
+       */
+      public Builder setToBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
         to_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional .XMPPError error = 6;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> errorBuilder_;
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public boolean hasError() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError getError() {
         if (errorBuilder_ == null) {
           return error_;
@@ -10848,6 +14914,9 @@ public final class GoogleServicesFramework {
           return errorBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public Builder setError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (value == null) {
@@ -10861,6 +14930,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public Builder setError(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder builderForValue) {
         if (errorBuilder_ == null) {
@@ -10872,6 +14944,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public Builder mergeError(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError value) {
         if (errorBuilder_ == null) {
           if (((bitField0_ & 0x00000020) == 0x00000020) &&
@@ -10888,6 +14963,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public Builder clearError() {
         if (errorBuilder_ == null) {
           error_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.getDefaultInstance();
@@ -10898,11 +14976,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder getErrorBuilder() {
         bitField0_ |= 0x00000020;
         onChanged();
         return getErrorFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder getErrorOrBuilder() {
         if (errorBuilder_ != null) {
           return errorBuilder_.getMessageOrBuilder();
@@ -10910,6 +14994,9 @@ public final class GoogleServicesFramework {
           return error_;
         }
       }
+      /**
+       * <code>optional .XMPPError error = 6;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPErrorOrBuilder> 
           getErrorFieldBuilder() {
@@ -10923,14 +15010,20 @@ public final class GoogleServicesFramework {
         }
         return errorBuilder_;
       }
-      
+
       // optional .Extension extension = 7;
       private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension extension_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> extensionBuilder_;
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public boolean hasExtension() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension getExtension() {
         if (extensionBuilder_ == null) {
           return extension_;
@@ -10938,6 +15031,9 @@ public final class GoogleServicesFramework {
           return extensionBuilder_.getMessage();
         }
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public Builder setExtension(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension value) {
         if (extensionBuilder_ == null) {
           if (value == null) {
@@ -10951,6 +15047,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000040;
         return this;
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public Builder setExtension(
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder builderForValue) {
         if (extensionBuilder_ == null) {
@@ -10962,6 +15061,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000040;
         return this;
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public Builder mergeExtension(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension value) {
         if (extensionBuilder_ == null) {
           if (((bitField0_ & 0x00000040) == 0x00000040) &&
@@ -10978,6 +15080,9 @@ public final class GoogleServicesFramework {
         bitField0_ |= 0x00000040;
         return this;
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public Builder clearExtension() {
         if (extensionBuilder_ == null) {
           extension_ = com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.getDefaultInstance();
@@ -10988,11 +15093,17 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder getExtensionBuilder() {
         bitField0_ |= 0x00000040;
         onChanged();
         return getExtensionFieldBuilder().getBuilder();
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder getExtensionOrBuilder() {
         if (extensionBuilder_ != null) {
           return extensionBuilder_.getMessageOrBuilder();
@@ -11000,6 +15111,9 @@ public final class GoogleServicesFramework {
           return extension_;
         }
       }
+      /**
+       * <code>optional .Extension extension = 7;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.ExtensionOrBuilder> 
           getExtensionFieldBuilder() {
@@ -11013,23 +15127,50 @@ public final class GoogleServicesFramework {
         }
         return extensionBuilder_;
       }
-      
+
       // optional string rmq2id = 8;
       private java.lang.Object rmq2Id_ = "";
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
       public boolean hasRmq2Id() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
-      public String getRmq2Id() {
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
+      public java.lang.String getRmq2Id() {
         java.lang.Object ref = rmq2Id_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           rmq2Id_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setRmq2Id(String value) {
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRmq2IdBytes() {
+        java.lang.Object ref = rmq2Id_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          rmq2Id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
+      public Builder setRmq2Id(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -11038,152 +15179,295 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
       public Builder clearRmq2Id() {
         bitField0_ = (bitField0_ & ~0x00000080);
         rmq2Id_ = getDefaultInstance().getRmq2Id();
         onChanged();
         return this;
       }
-      void setRmq2Id(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000080;
+      /**
+       * <code>optional string rmq2id = 8;</code>
+       */
+      public Builder setRmq2IdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
         rmq2Id_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int32 streamid = 9;
       private int streamid_ ;
+      /**
+       * <code>optional int32 streamid = 9;</code>
+       */
       public boolean hasStreamid() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
+      /**
+       * <code>optional int32 streamid = 9;</code>
+       */
       public int getStreamid() {
         return streamid_;
       }
+      /**
+       * <code>optional int32 streamid = 9;</code>
+       */
       public Builder setStreamid(int value) {
         bitField0_ |= 0x00000100;
         streamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 streamid = 9;</code>
+       */
       public Builder clearStreamid() {
         bitField0_ = (bitField0_ & ~0x00000100);
         streamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int32 laststreamid = 10;
       private int laststreamid_ ;
+      /**
+       * <code>optional int32 laststreamid = 10;</code>
+       */
       public boolean hasLaststreamid() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
+      /**
+       * <code>optional int32 laststreamid = 10;</code>
+       */
       public int getLaststreamid() {
         return laststreamid_;
       }
+      /**
+       * <code>optional int32 laststreamid = 10;</code>
+       */
       public Builder setLaststreamid(int value) {
         bitField0_ |= 0x00000200;
         laststreamid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 laststreamid = 10;</code>
+       */
       public Builder clearLaststreamid() {
         bitField0_ = (bitField0_ & ~0x00000200);
         laststreamid_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int64 accountid = 11;
       private long accountid_ ;
+      /**
+       * <code>optional int64 accountid = 11;</code>
+       */
       public boolean hasAccountid() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
+      /**
+       * <code>optional int64 accountid = 11;</code>
+       */
       public long getAccountid() {
         return accountid_;
       }
+      /**
+       * <code>optional int64 accountid = 11;</code>
+       */
       public Builder setAccountid(long value) {
         bitField0_ |= 0x00000400;
         accountid_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int64 accountid = 11;</code>
+       */
       public Builder clearAccountid() {
         bitField0_ = (bitField0_ & ~0x00000400);
         accountid_ = 0L;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:IQStanza)
     }
-    
+
     static {
       defaultInstance = new IQStanza(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:IQStanza)
   }
-  
+
   public interface StateOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional bool state1 = 1;
+    /**
+     * <code>optional bool state1 = 1;</code>
+     */
     boolean hasState1();
+    /**
+     * <code>optional bool state1 = 1;</code>
+     */
     boolean getState1();
-    
+
     // optional bool state2 = 2;
+    /**
+     * <code>optional bool state2 = 2;</code>
+     */
     boolean hasState2();
+    /**
+     * <code>optional bool state2 = 2;</code>
+     */
     boolean getState2();
   }
+  /**
+   * Protobuf type {@code State}
+   */
   public static final class State extends
       com.google.protobuf.GeneratedMessage
       implements StateOrBuilder {
     // Use State.newBuilder() to construct.
-    private State(Builder builder) {
+    private State(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private State(boolean noInit) {}
-    
+    private State(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final State defaultInstance;
     public static State getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public State getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private State(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              state1_ = input.readBool();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              state2_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_fieldAccessorTable;
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<State> PARSER =
+        new com.google.protobuf.AbstractParser<State>() {
+      public State parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new State(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<State> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // optional bool state1 = 1;
     public static final int STATE1_FIELD_NUMBER = 1;
     private boolean state1_;
+    /**
+     * <code>optional bool state1 = 1;</code>
+     */
     public boolean hasState1() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>optional bool state1 = 1;</code>
+     */
     public boolean getState1() {
       return state1_;
     }
-    
+
     // optional bool state2 = 2;
     public static final int STATE2_FIELD_NUMBER = 2;
     private boolean state2_;
+    /**
+     * <code>optional bool state2 = 2;</code>
+     */
     public boolean hasState2() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>optional bool state2 = 2;</code>
+     */
     public boolean getState2() {
       return state2_;
     }
-    
+
     private void initFields() {
       state1_ = false;
       state2_ = false;
@@ -11192,11 +15476,11 @@ public final class GoogleServicesFramework {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -11208,12 +15492,12 @@ public final class GoogleServicesFramework {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -11227,94 +15511,83 @@ public final class GoogleServicesFramework {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code State}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.StateOrBuilder {
@@ -11322,18 +15595,21 @@ public final class GoogleServicesFramework {
           getDescriptor() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_fieldAccessorTable;
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.Builder.class);
       }
-      
+
       // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11344,7 +15620,7 @@ public final class GoogleServicesFramework {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         state1_ = false;
@@ -11353,20 +15629,20 @@ public final class GoogleServicesFramework {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.getDescriptor();
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_State_descriptor;
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State getDefaultInstanceForType() {
         return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.getDefaultInstance();
       }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State build() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State result = buildPartial();
         if (!result.isInitialized()) {
@@ -11374,17 +15650,7 @@ public final class GoogleServicesFramework {
         }
         return result;
       }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State buildPartial() {
         com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State(this);
         int from_bitField0_ = bitField0_;
@@ -11401,7 +15667,7 @@ public final class GoogleServicesFramework {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State) {
           return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State)other);
@@ -11410,7 +15676,7 @@ public final class GoogleServicesFramework {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State other) {
         if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.getDefaultInstance()) return this;
         if (other.hasState1()) {
@@ -11422,731 +15688,268 @@ public final class GoogleServicesFramework {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              state1_ = input.readBool();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              state2_ = input.readBool();
-              break;
-            }
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // optional bool state1 = 1;
       private boolean state1_ ;
+      /**
+       * <code>optional bool state1 = 1;</code>
+       */
       public boolean hasState1() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional bool state1 = 1;</code>
+       */
       public boolean getState1() {
         return state1_;
       }
+      /**
+       * <code>optional bool state1 = 1;</code>
+       */
       public Builder setState1(boolean value) {
         bitField0_ |= 0x00000001;
         state1_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool state1 = 1;</code>
+       */
       public Builder clearState1() {
         bitField0_ = (bitField0_ & ~0x00000001);
         state1_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional bool state2 = 2;
       private boolean state2_ ;
+      /**
+       * <code>optional bool state2 = 2;</code>
+       */
       public boolean hasState2() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>optional bool state2 = 2;</code>
+       */
       public boolean getState2() {
         return state2_;
       }
+      /**
+       * <code>optional bool state2 = 2;</code>
+       */
       public Builder setState2(boolean value) {
         bitField0_ |= 0x00000002;
         state2_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool state2 = 2;</code>
+       */
       public Builder clearState2() {
         bitField0_ = (bitField0_ & ~0x00000002);
         state2_ = false;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:State)
     }
-    
+
     static {
       defaultInstance = new State(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:State)
   }
-  
+
   public interface PostAuthBatchQueryOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional bool online = 1;
+    /**
+     * <code>optional bool online = 1;</code>
+     */
     boolean hasOnline();
+    /**
+     * <code>optional bool online = 1;</code>
+     */
     boolean getOnline();
-    
+
     // optional bool deviceidle = 2;
+    /**
+     * <code>optional bool deviceidle = 2;</code>
+     */
     boolean hasDeviceidle();
+    /**
+     * <code>optional bool deviceidle = 2;</code>
+     */
     boolean getDeviceidle();
-    
+
     // optional bool showmobileindicator = 3;
+    /**
+     * <code>optional bool showmobileindicator = 3;</code>
+     */
     boolean hasShowmobileindicator();
+    /**
+     * <code>optional bool showmobileindicator = 3;</code>
+     */
     boolean getShowmobileindicator();
-    
+
     // optional int32 sharedstatusversion = 4;
+    /**
+     * <code>optional int32 sharedstatusversion = 4;</code>
+     */
     boolean hasSharedstatusversion();
+    /**
+     * <code>optional int32 sharedstatusversion = 4;</code>
+     */
     int getSharedstatusversion();
-    
+
     // optional string rosteretag = 5;
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
     boolean hasRosteretag();
-    String getRosteretag();
-    
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
+    java.lang.String getRosteretag();
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getRosteretagBytes();
+
     // optional string otretag = 6;
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
     boolean hasOtretag();
-    String getOtretag();
-    
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
+    java.lang.String getOtretag();
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getOtretagBytes();
+
     // optional string avatarhash = 7;
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
     boolean hasAvatarhash();
-    String getAvatarhash();
-    
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
+    java.lang.String getAvatarhash();
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getAvatarhashBytes();
+
     // optional string vcardquerystanzaid = 8;
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
     boolean hasVcardquerystanzaid();
-    String getVcardquerystanzaid();
-    
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
+    java.lang.String getVcardquerystanzaid();
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
+    com.google.protobuf.ByteString
+        getVcardquerystanzaidBytes();
+
     // optional int32 capabilities = 9;
+    /**
+     * <code>optional int32 capabilities = 9;</code>
+     */
     boolean hasCapabilities();
+    /**
+     * <code>optional int32 capabilities = 9;</code>
+     */
     int getCapabilities();
   }
+  /**
+   * Protobuf type {@code PostAuthBatchQuery}
+   */
   public static final class PostAuthBatchQuery extends
       com.google.protobuf.GeneratedMessage
       implements PostAuthBatchQueryOrBuilder {
     // Use PostAuthBatchQuery.newBuilder() to construct.
-    private PostAuthBatchQuery(Builder builder) {
+    private PostAuthBatchQuery(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private PostAuthBatchQuery(boolean noInit) {}
-    
+    private PostAuthBatchQuery(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final PostAuthBatchQuery defaultInstance;
     public static PostAuthBatchQuery getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public PostAuthBatchQuery getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // optional bool online = 1;
-    public static final int ONLINE_FIELD_NUMBER = 1;
-    private boolean online_;
-    public boolean hasOnline() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public boolean getOnline() {
-      return online_;
-    }
-    
-    // optional bool deviceidle = 2;
-    public static final int DEVICEIDLE_FIELD_NUMBER = 2;
-    private boolean deviceidle_;
-    public boolean hasDeviceidle() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public boolean getDeviceidle() {
-      return deviceidle_;
-    }
-    
-    // optional bool showmobileindicator = 3;
-    public static final int SHOWMOBILEINDICATOR_FIELD_NUMBER = 3;
-    private boolean showmobileindicator_;
-    public boolean hasShowmobileindicator() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public boolean getShowmobileindicator() {
-      return showmobileindicator_;
-    }
-    
-    // optional int32 sharedstatusversion = 4;
-    public static final int SHAREDSTATUSVERSION_FIELD_NUMBER = 4;
-    private int sharedstatusversion_;
-    public boolean hasSharedstatusversion() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public int getSharedstatusversion() {
-      return sharedstatusversion_;
-    }
-    
-    // optional string rosteretag = 5;
-    public static final int ROSTERETAG_FIELD_NUMBER = 5;
-    private java.lang.Object rosteretag_;
-    public boolean hasRosteretag() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    public String getRosteretag() {
-      java.lang.Object ref = rosteretag_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          rosteretag_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getRosteretagBytes() {
-      java.lang.Object ref = rosteretag_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        rosteretag_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string otretag = 6;
-    public static final int OTRETAG_FIELD_NUMBER = 6;
-    private java.lang.Object otretag_;
-    public boolean hasOtretag() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    public String getOtretag() {
-      java.lang.Object ref = otretag_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          otretag_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getOtretagBytes() {
-      java.lang.Object ref = otretag_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        otretag_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string avatarhash = 7;
-    public static final int AVATARHASH_FIELD_NUMBER = 7;
-    private java.lang.Object avatarhash_;
-    public boolean hasAvatarhash() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    public String getAvatarhash() {
-      java.lang.Object ref = avatarhash_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          avatarhash_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getAvatarhashBytes() {
-      java.lang.Object ref = avatarhash_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        avatarhash_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional string vcardquerystanzaid = 8;
-    public static final int VCARDQUERYSTANZAID_FIELD_NUMBER = 8;
-    private java.lang.Object vcardquerystanzaid_;
-    public boolean hasVcardquerystanzaid() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
-    }
-    public String getVcardquerystanzaid() {
-      java.lang.Object ref = vcardquerystanzaid_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          vcardquerystanzaid_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getVcardquerystanzaidBytes() {
-      java.lang.Object ref = vcardquerystanzaid_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        vcardquerystanzaid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // optional int32 capabilities = 9;
-    public static final int CAPABILITIES_FIELD_NUMBER = 9;
-    private int capabilities_;
-    public boolean hasCapabilities() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
-    }
-    public int getCapabilities() {
-      return capabilities_;
-    }
-    
-    private void initFields() {
-      online_ = false;
-      deviceidle_ = false;
-      showmobileindicator_ = false;
-      sharedstatusversion_ = 0;
-      rosteretag_ = "";
-      otretag_ = "";
-      avatarhash_ = "";
-      vcardquerystanzaid_ = "";
-      capabilities_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBool(1, online_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBool(2, deviceidle_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(3, showmobileindicator_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, sharedstatusversion_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, getRosteretagBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(6, getOtretagBytes());
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeBytes(7, getAvatarhashBytes());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeBytes(8, getVcardquerystanzaidBytes());
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt32(9, capabilities_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, online_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, deviceidle_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, showmobileindicator_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, sharedstatusversion_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getRosteretagBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(6, getOtretagBytes());
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, getAvatarhashBytes());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(8, getVcardquerystanzaidBytes());
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, capabilities_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+    private PostAuthBatchQuery(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQueryOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_fieldAccessorTable;
-      }
-      
-      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        online_ = false;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        deviceidle_ = false;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        showmobileindicator_ = false;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        sharedstatusversion_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        rosteretag_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
-        otretag_ = "";
-        bitField0_ = (bitField0_ & ~0x00000020);
-        avatarhash_ = "";
-        bitField0_ = (bitField0_ & ~0x00000040);
-        vcardquerystanzaid_ = "";
-        bitField0_ = (bitField0_ & ~0x00000080);
-        capabilities_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000100);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.getDescriptor();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery getDefaultInstanceForType() {
-        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.getDefaultInstance();
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery build() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery buildPartial() {
-        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.online_ = online_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.deviceidle_ = deviceidle_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.showmobileindicator_ = showmobileindicator_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.sharedstatusversion_ = sharedstatusversion_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.rosteretag_ = rosteretag_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.otretag_ = otretag_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.avatarhash_ = avatarhash_;
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
-        }
-        result.vcardquerystanzaid_ = vcardquerystanzaid_;
-        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
-          to_bitField0_ |= 0x00000100;
-        }
-        result.capabilities_ = capabilities_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery) {
-          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery other) {
-        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.getDefaultInstance()) return this;
-        if (other.hasOnline()) {
-          setOnline(other.getOnline());
-        }
-        if (other.hasDeviceidle()) {
-          setDeviceidle(other.getDeviceidle());
-        }
-        if (other.hasShowmobileindicator()) {
-          setShowmobileindicator(other.getShowmobileindicator());
-        }
-        if (other.hasSharedstatusversion()) {
-          setSharedstatusversion(other.getSharedstatusversion());
-        }
-        if (other.hasRosteretag()) {
-          setRosteretag(other.getRosteretag());
-        }
-        if (other.hasOtretag()) {
-          setOtretag(other.getOtretag());
-        }
-        if (other.hasAvatarhash()) {
-          setAvatarhash(other.getAvatarhash());
-        }
-        if (other.hasVcardquerystanzaid()) {
-          setVcardquerystanzaid(other.getVcardquerystanzaid());
-        }
-        if (other.hasCapabilities()) {
-          setCapabilities(other.getCapabilities());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -12197,110 +16000,842 @@ public final class GoogleServicesFramework {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<PostAuthBatchQuery> PARSER =
+        new com.google.protobuf.AbstractParser<PostAuthBatchQuery>() {
+      public PostAuthBatchQuery parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PostAuthBatchQuery(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PostAuthBatchQuery> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional bool online = 1;
+    public static final int ONLINE_FIELD_NUMBER = 1;
+    private boolean online_;
+    /**
+     * <code>optional bool online = 1;</code>
+     */
+    public boolean hasOnline() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional bool online = 1;</code>
+     */
+    public boolean getOnline() {
+      return online_;
+    }
+
+    // optional bool deviceidle = 2;
+    public static final int DEVICEIDLE_FIELD_NUMBER = 2;
+    private boolean deviceidle_;
+    /**
+     * <code>optional bool deviceidle = 2;</code>
+     */
+    public boolean hasDeviceidle() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional bool deviceidle = 2;</code>
+     */
+    public boolean getDeviceidle() {
+      return deviceidle_;
+    }
+
+    // optional bool showmobileindicator = 3;
+    public static final int SHOWMOBILEINDICATOR_FIELD_NUMBER = 3;
+    private boolean showmobileindicator_;
+    /**
+     * <code>optional bool showmobileindicator = 3;</code>
+     */
+    public boolean hasShowmobileindicator() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool showmobileindicator = 3;</code>
+     */
+    public boolean getShowmobileindicator() {
+      return showmobileindicator_;
+    }
+
+    // optional int32 sharedstatusversion = 4;
+    public static final int SHAREDSTATUSVERSION_FIELD_NUMBER = 4;
+    private int sharedstatusversion_;
+    /**
+     * <code>optional int32 sharedstatusversion = 4;</code>
+     */
+    public boolean hasSharedstatusversion() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 sharedstatusversion = 4;</code>
+     */
+    public int getSharedstatusversion() {
+      return sharedstatusversion_;
+    }
+
+    // optional string rosteretag = 5;
+    public static final int ROSTERETAG_FIELD_NUMBER = 5;
+    private java.lang.Object rosteretag_;
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
+    public boolean hasRosteretag() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
+    public java.lang.String getRosteretag() {
+      java.lang.Object ref = rosteretag_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          rosteretag_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string rosteretag = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRosteretagBytes() {
+      java.lang.Object ref = rosteretag_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        rosteretag_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string otretag = 6;
+    public static final int OTRETAG_FIELD_NUMBER = 6;
+    private java.lang.Object otretag_;
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
+    public boolean hasOtretag() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
+    public java.lang.String getOtretag() {
+      java.lang.Object ref = otretag_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          otretag_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string otretag = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getOtretagBytes() {
+      java.lang.Object ref = otretag_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        otretag_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string avatarhash = 7;
+    public static final int AVATARHASH_FIELD_NUMBER = 7;
+    private java.lang.Object avatarhash_;
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
+    public boolean hasAvatarhash() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
+    public java.lang.String getAvatarhash() {
+      java.lang.Object ref = avatarhash_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          avatarhash_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string avatarhash = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAvatarhashBytes() {
+      java.lang.Object ref = avatarhash_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        avatarhash_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string vcardquerystanzaid = 8;
+    public static final int VCARDQUERYSTANZAID_FIELD_NUMBER = 8;
+    private java.lang.Object vcardquerystanzaid_;
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
+    public boolean hasVcardquerystanzaid() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
+    public java.lang.String getVcardquerystanzaid() {
+      java.lang.Object ref = vcardquerystanzaid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          vcardquerystanzaid_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string vcardquerystanzaid = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getVcardquerystanzaidBytes() {
+      java.lang.Object ref = vcardquerystanzaid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        vcardquerystanzaid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 capabilities = 9;
+    public static final int CAPABILITIES_FIELD_NUMBER = 9;
+    private int capabilities_;
+    /**
+     * <code>optional int32 capabilities = 9;</code>
+     */
+    public boolean hasCapabilities() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional int32 capabilities = 9;</code>
+     */
+    public int getCapabilities() {
+      return capabilities_;
+    }
+
+    private void initFields() {
+      online_ = false;
+      deviceidle_ = false;
+      showmobileindicator_ = false;
+      sharedstatusversion_ = 0;
+      rosteretag_ = "";
+      otretag_ = "";
+      avatarhash_ = "";
+      vcardquerystanzaid_ = "";
+      capabilities_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBool(1, online_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, deviceidle_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, showmobileindicator_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, sharedstatusversion_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getRosteretagBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getOtretagBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(7, getAvatarhashBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(8, getVcardquerystanzaidBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(9, capabilities_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, online_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, deviceidle_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, showmobileindicator_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, sharedstatusversion_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getRosteretagBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getOtretagBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(7, getAvatarhashBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(8, getVcardquerystanzaidBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, capabilities_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code PostAuthBatchQuery}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQueryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.class, com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.Builder.class);
+      }
+
+      // Construct using com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        online_ = false;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceidle_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        showmobileindicator_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        sharedstatusversion_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        rosteretag_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        otretag_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        avatarhash_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        vcardquerystanzaid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000080);
+        capabilities_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.internal_static_PostAuthBatchQuery_descriptor;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery getDefaultInstanceForType() {
+        return com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.getDefaultInstance();
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery build() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery buildPartial() {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery result = new com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.online_ = online_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.deviceidle_ = deviceidle_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.showmobileindicator_ = showmobileindicator_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.sharedstatusversion_ = sharedstatusversion_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.rosteretag_ = rosteretag_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.otretag_ = otretag_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.avatarhash_ = avatarhash_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.vcardquerystanzaid_ = vcardquerystanzaid_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.capabilities_ = capabilities_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery) {
+          return mergeFrom((com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery other) {
+        if (other == com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.getDefaultInstance()) return this;
+        if (other.hasOnline()) {
+          setOnline(other.getOnline());
+        }
+        if (other.hasDeviceidle()) {
+          setDeviceidle(other.getDeviceidle());
+        }
+        if (other.hasShowmobileindicator()) {
+          setShowmobileindicator(other.getShowmobileindicator());
+        }
+        if (other.hasSharedstatusversion()) {
+          setSharedstatusversion(other.getSharedstatusversion());
+        }
+        if (other.hasRosteretag()) {
+          bitField0_ |= 0x00000010;
+          rosteretag_ = other.rosteretag_;
+          onChanged();
+        }
+        if (other.hasOtretag()) {
+          bitField0_ |= 0x00000020;
+          otretag_ = other.otretag_;
+          onChanged();
+        }
+        if (other.hasAvatarhash()) {
+          bitField0_ |= 0x00000040;
+          avatarhash_ = other.avatarhash_;
+          onChanged();
+        }
+        if (other.hasVcardquerystanzaid()) {
+          bitField0_ |= 0x00000080;
+          vcardquerystanzaid_ = other.vcardquerystanzaid_;
+          onChanged();
+        }
+        if (other.hasCapabilities()) {
+          setCapabilities(other.getCapabilities());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // optional bool online = 1;
       private boolean online_ ;
+      /**
+       * <code>optional bool online = 1;</code>
+       */
       public boolean hasOnline() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional bool online = 1;</code>
+       */
       public boolean getOnline() {
         return online_;
       }
+      /**
+       * <code>optional bool online = 1;</code>
+       */
       public Builder setOnline(boolean value) {
         bitField0_ |= 0x00000001;
         online_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool online = 1;</code>
+       */
       public Builder clearOnline() {
         bitField0_ = (bitField0_ & ~0x00000001);
         online_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional bool deviceidle = 2;
       private boolean deviceidle_ ;
+      /**
+       * <code>optional bool deviceidle = 2;</code>
+       */
       public boolean hasDeviceidle() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>optional bool deviceidle = 2;</code>
+       */
       public boolean getDeviceidle() {
         return deviceidle_;
       }
+      /**
+       * <code>optional bool deviceidle = 2;</code>
+       */
       public Builder setDeviceidle(boolean value) {
         bitField0_ |= 0x00000002;
         deviceidle_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool deviceidle = 2;</code>
+       */
       public Builder clearDeviceidle() {
         bitField0_ = (bitField0_ & ~0x00000002);
         deviceidle_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional bool showmobileindicator = 3;
       private boolean showmobileindicator_ ;
+      /**
+       * <code>optional bool showmobileindicator = 3;</code>
+       */
       public boolean hasShowmobileindicator() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>optional bool showmobileindicator = 3;</code>
+       */
       public boolean getShowmobileindicator() {
         return showmobileindicator_;
       }
+      /**
+       * <code>optional bool showmobileindicator = 3;</code>
+       */
       public Builder setShowmobileindicator(boolean value) {
         bitField0_ |= 0x00000004;
         showmobileindicator_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional bool showmobileindicator = 3;</code>
+       */
       public Builder clearShowmobileindicator() {
         bitField0_ = (bitField0_ & ~0x00000004);
         showmobileindicator_ = false;
         onChanged();
         return this;
       }
-      
+
       // optional int32 sharedstatusversion = 4;
       private int sharedstatusversion_ ;
+      /**
+       * <code>optional int32 sharedstatusversion = 4;</code>
+       */
       public boolean hasSharedstatusversion() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>optional int32 sharedstatusversion = 4;</code>
+       */
       public int getSharedstatusversion() {
         return sharedstatusversion_;
       }
+      /**
+       * <code>optional int32 sharedstatusversion = 4;</code>
+       */
       public Builder setSharedstatusversion(int value) {
         bitField0_ |= 0x00000008;
         sharedstatusversion_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 sharedstatusversion = 4;</code>
+       */
       public Builder clearSharedstatusversion() {
         bitField0_ = (bitField0_ & ~0x00000008);
         sharedstatusversion_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string rosteretag = 5;
       private java.lang.Object rosteretag_ = "";
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
       public boolean hasRosteretag() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-      public String getRosteretag() {
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
+      public java.lang.String getRosteretag() {
         java.lang.Object ref = rosteretag_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           rosteretag_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setRosteretag(String value) {
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRosteretagBytes() {
+        java.lang.Object ref = rosteretag_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          rosteretag_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
+      public Builder setRosteretag(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -12309,34 +16844,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
       public Builder clearRosteretag() {
         bitField0_ = (bitField0_ & ~0x00000010);
         rosteretag_ = getDefaultInstance().getRosteretag();
         onChanged();
         return this;
       }
-      void setRosteretag(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
+      /**
+       * <code>optional string rosteretag = 5;</code>
+       */
+      public Builder setRosteretagBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
         rosteretag_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string otretag = 6;
       private java.lang.Object otretag_ = "";
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
       public boolean hasOtretag() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      public String getOtretag() {
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
+      public java.lang.String getOtretag() {
         java.lang.Object ref = otretag_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           otretag_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setOtretag(String value) {
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOtretagBytes() {
+        java.lang.Object ref = otretag_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          otretag_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
+      public Builder setOtretag(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -12345,34 +16918,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
       public Builder clearOtretag() {
         bitField0_ = (bitField0_ & ~0x00000020);
         otretag_ = getDefaultInstance().getOtretag();
         onChanged();
         return this;
       }
-      void setOtretag(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+      /**
+       * <code>optional string otretag = 6;</code>
+       */
+      public Builder setOtretagBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
         otretag_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string avatarhash = 7;
       private java.lang.Object avatarhash_ = "";
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
       public boolean hasAvatarhash() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-      public String getAvatarhash() {
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
+      public java.lang.String getAvatarhash() {
         java.lang.Object ref = avatarhash_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           avatarhash_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setAvatarhash(String value) {
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAvatarhashBytes() {
+        java.lang.Object ref = avatarhash_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          avatarhash_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
+      public Builder setAvatarhash(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -12381,34 +16992,72 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
       public Builder clearAvatarhash() {
         bitField0_ = (bitField0_ & ~0x00000040);
         avatarhash_ = getDefaultInstance().getAvatarhash();
         onChanged();
         return this;
       }
-      void setAvatarhash(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000040;
+      /**
+       * <code>optional string avatarhash = 7;</code>
+       */
+      public Builder setAvatarhashBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
         avatarhash_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional string vcardquerystanzaid = 8;
       private java.lang.Object vcardquerystanzaid_ = "";
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
       public boolean hasVcardquerystanzaid() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
-      public String getVcardquerystanzaid() {
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
+      public java.lang.String getVcardquerystanzaid() {
         java.lang.Object ref = vcardquerystanzaid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           vcardquerystanzaid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setVcardquerystanzaid(String value) {
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
+      public com.google.protobuf.ByteString
+          getVcardquerystanzaidBytes() {
+        java.lang.Object ref = vcardquerystanzaid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          vcardquerystanzaid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
+      public Builder setVcardquerystanzaid(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -12417,50 +17066,73 @@ public final class GoogleServicesFramework {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
       public Builder clearVcardquerystanzaid() {
         bitField0_ = (bitField0_ & ~0x00000080);
         vcardquerystanzaid_ = getDefaultInstance().getVcardquerystanzaid();
         onChanged();
         return this;
       }
-      void setVcardquerystanzaid(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000080;
+      /**
+       * <code>optional string vcardquerystanzaid = 8;</code>
+       */
+      public Builder setVcardquerystanzaidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
         vcardquerystanzaid_ = value;
         onChanged();
+        return this;
       }
-      
+
       // optional int32 capabilities = 9;
       private int capabilities_ ;
+      /**
+       * <code>optional int32 capabilities = 9;</code>
+       */
       public boolean hasCapabilities() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
+      /**
+       * <code>optional int32 capabilities = 9;</code>
+       */
       public int getCapabilities() {
         return capabilities_;
       }
+      /**
+       * <code>optional int32 capabilities = 9;</code>
+       */
       public Builder setCapabilities(int value) {
         bitField0_ |= 0x00000100;
         capabilities_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 capabilities = 9;</code>
+       */
       public Builder clearCapabilities() {
         bitField0_ = (bitField0_ & ~0x00000100);
         capabilities_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:PostAuthBatchQuery)
     }
-    
+
     static {
       defaultInstance = new PostAuthBatchQuery(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:PostAuthBatchQuery)
   }
-  
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_LoginRequest_descriptor;
   private static
@@ -12541,7 +17213,7 @@ public final class GoogleServicesFramework {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_PostAuthBatchQuery_fieldAccessorTable;
-  
+
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -12612,129 +17284,97 @@ public final class GoogleServicesFramework {
           internal_static_LoginRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_LoginRequest_descriptor,
-              new java.lang.String[] { "Packetid", "Domain", "User", "Resource", "Token", "Deviceid", "Lastrmqid", "Settings", "Compress", "Persistentids", "Includestreamidinprotobuf", "Adaptiveheartbeat", "Heartbeatstat", "Usermq2", "Accountid", "Unknown1", "Networktype", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginRequest.Builder.class);
+              new java.lang.String[] { "Packetid", "Domain", "User", "Resource", "Token", "Deviceid", "Lastrmqid", "Settings", "Compress", "Persistentids", "Includestreamidinprotobuf", "Adaptiveheartbeat", "Heartbeatstat", "Usermq2", "Accountid", "Unknown1", "Networktype", });
           internal_static_HeartBeatStat_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_HeartBeatStat_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_HeartBeatStat_descriptor,
-              new java.lang.String[] { "Ip", "Timeout", "Interval", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatStat.Builder.class);
+              new java.lang.String[] { "Ip", "Timeout", "Interval", });
           internal_static_Setting_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_Setting_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_Setting_descriptor,
-              new java.lang.String[] { "Key", "Value", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Setting.Builder.class);
+              new java.lang.String[] { "Key", "Value", });
           internal_static_HeartBeatConfig_descriptor =
             getDescriptor().getMessageTypes().get(3);
           internal_static_HeartBeatConfig_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_HeartBeatConfig_descriptor,
-              new java.lang.String[] { "Interval", "Ip", "Uploadstat", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartBeatConfig.Builder.class);
+              new java.lang.String[] { "Interval", "Ip", "Uploadstat", });
           internal_static_LoginResponse_descriptor =
             getDescriptor().getMessageTypes().get(4);
           internal_static_LoginResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_LoginResponse_descriptor,
-              new java.lang.String[] { "Packetid", "Jid", "Servertimestamp", "Heartbeatconfig", "Settings", "Laststreamid", "Streamid", "Error", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.LoginResponse.Builder.class);
+              new java.lang.String[] { "Packetid", "Jid", "Servertimestamp", "Heartbeatconfig", "Settings", "Laststreamid", "Streamid", "Error", });
           internal_static_XMPPError_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_XMPPError_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_XMPPError_descriptor,
-              new java.lang.String[] { "Code", "Message", "Type", "Extension", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.XMPPError.Builder.class);
+              new java.lang.String[] { "Code", "Message", "Type", "Extension", });
           internal_static_Extension_descriptor =
             getDescriptor().getMessageTypes().get(6);
           internal_static_Extension_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_Extension_descriptor,
-              new java.lang.String[] { "Code", "Message", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Extension.Builder.class);
+              new java.lang.String[] { "Code", "Message", });
           internal_static_BindAccountRequest_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_BindAccountRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_BindAccountRequest_descriptor,
-              new java.lang.String[] { "Packetid", "Domain", "User", "Resource", "Accountid", "Token", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountRequest.Builder.class);
+              new java.lang.String[] { "Packetid", "Domain", "User", "Resource", "Accountid", "Token", });
           internal_static_BindAccountResponse_descriptor =
             getDescriptor().getMessageTypes().get(8);
           internal_static_BindAccountResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_BindAccountResponse_descriptor,
-              new java.lang.String[] { "Packetid", "Jid", "Laststreamid", "Streamid", "Error", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.BindAccountResponse.Builder.class);
+              new java.lang.String[] { "Packetid", "Jid", "Laststreamid", "Streamid", "Error", });
           internal_static_Close_descriptor =
             getDescriptor().getMessageTypes().get(9);
           internal_static_Close_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_Close_descriptor,
-              new java.lang.String[] { },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.Close.Builder.class);
+              new java.lang.String[] { });
           internal_static_HeartbeatAck_descriptor =
             getDescriptor().getMessageTypes().get(10);
           internal_static_HeartbeatAck_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_HeartbeatAck_descriptor,
-              new java.lang.String[] { },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.HeartbeatAck.Builder.class);
+              new java.lang.String[] { });
           internal_static_DataMessageStanza_descriptor =
             getDescriptor().getMessageTypes().get(11);
           internal_static_DataMessageStanza_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_DataMessageStanza_descriptor,
-              new java.lang.String[] { "Rmqid", "Packetid", "From", "To", "Category", "Token", "Appdata", "Fromtrustedserver", "Rmq2Id", "Streamid", "Laststreamid", "Permission", "Regid", "Pkgsignature", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.DataMessageStanza.Builder.class);
+              new java.lang.String[] { "Rmqid", "Packetid", "From", "To", "Category", "Token", "Appdata", "Fromtrustedserver", "Rmq2Id", "Streamid", "Laststreamid", "Permission", "Regid", "Pkgsignature", });
           internal_static_AppData_descriptor =
             getDescriptor().getMessageTypes().get(12);
           internal_static_AppData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_AppData_descriptor,
-              new java.lang.String[] { "Key", "Value", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.AppData.Builder.class);
+              new java.lang.String[] { "Key", "Value", });
           internal_static_IQStanza_descriptor =
             getDescriptor().getMessageTypes().get(13);
           internal_static_IQStanza_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_IQStanza_descriptor,
-              new java.lang.String[] { "Rmqid", "Type", "Packetid", "From", "To", "Error", "Extension", "Rmq2Id", "Streamid", "Laststreamid", "Accountid", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.IQStanza.Builder.class);
+              new java.lang.String[] { "Rmqid", "Type", "Packetid", "From", "To", "Error", "Extension", "Rmq2Id", "Streamid", "Laststreamid", "Accountid", });
           internal_static_State_descriptor =
             getDescriptor().getMessageTypes().get(14);
           internal_static_State_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_State_descriptor,
-              new java.lang.String[] { "State1", "State2", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.State.Builder.class);
+              new java.lang.String[] { "State1", "State2", });
           internal_static_PostAuthBatchQuery_descriptor =
             getDescriptor().getMessageTypes().get(15);
           internal_static_PostAuthBatchQuery_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_PostAuthBatchQuery_descriptor,
-              new java.lang.String[] { "Online", "Deviceidle", "Showmobileindicator", "Sharedstatusversion", "Rosteretag", "Otretag", "Avatarhash", "Vcardquerystanzaid", "Capabilities", },
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.class,
-              com.soict.hxt.googleapi.gsf.GoogleServicesFramework.PostAuthBatchQuery.Builder.class);
+              new java.lang.String[] { "Online", "Deviceidle", "Showmobileindicator", "Sharedstatusversion", "Rosteretag", "Otretag", "Avatarhash", "Vcardquerystanzaid", "Capabilities", });
           return null;
         }
       };
@@ -12743,6 +17383,6 @@ public final class GoogleServicesFramework {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
   }
-  
+
   // @@protoc_insertion_point(outer_class_scope)
 }
