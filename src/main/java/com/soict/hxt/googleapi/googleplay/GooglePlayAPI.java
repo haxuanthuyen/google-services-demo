@@ -1,5 +1,8 @@
-package com.soict.hxt.googleapi;
+package com.soict.hxt.googleapi.googleplay;
 
+import com.soict.hxt.googleapi.GooglePlay;
+import com.soict.hxt.googleapi.GooglePlayException;
+import com.soict.hxt.googleapi.Utils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
