@@ -1,19 +1,33 @@
 package com.soict.hxt.googleapi.bo;
 
+import com.google.gson.annotations.Expose;
+
 /**
  * Created by thuyenhx on 02/08/2016.
  */
 public class SearchInfo {
+
+    @Expose(serialize = true)
     private String title;
+    @Expose(serialize = true)
     private String packageName;
+    @Expose(serialize = true)
     private String linkImages;
+    @Expose(serialize = false)
     private long versionCode;
+    @Expose(serialize = false)
     private long installSize;
+    @Expose(serialize = true)
     private String numDownload;
+    @Expose(serialize = true)
     private String uploadDate;
+    @Expose(serialize = true)
     private String shareUrl;
+    @Expose(serialize = true)
     private double starRating;
+    @Expose(serialize = false)
     private String developerEmail;
+    @Expose(serialize = false)
     private String developerWebsite;
 
     private int offerType;

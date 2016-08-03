@@ -22,7 +22,7 @@ public class GServicesMain {
             ContextHandler context = new ContextHandler("/index.html");
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setDirectoriesListed(true);
-            resource_handler.setWelcomeFiles(new String[]{"asset/js/recommend.html"});
+            resource_handler.setWelcomeFiles(new String[]{"webapp/search.html"});
             resource_handler.setResourceBase(".");
             context.setHandler(resource_handler);
 

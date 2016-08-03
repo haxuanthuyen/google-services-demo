@@ -1,0 +1,158 @@
+* {
+    text-shadow: none;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 140px;
+    height: 140px;
+    margin: 2px;
+}
+
+.container-table {
+    height: auto;
+    width: 1160px;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    margin: 0 auto 15px;
+    position: relative;
+    /*border: 1px solid #888888;*/
+}
+
+table, th, td {
+    border: 2px solid #A1C3DF;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-repeat: repeat-x;
+    border-color: #F44336;
+    background-color: #F44336;
+    color: #FFF !important;
+}
+
+#search-top{
+    /*display: block;*/
+    width: 250px;
+    height: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-apps {
+    width: 1000px;
+    margin: 0 auto;
+}
+.cluster {
+    display: inline-block;
+    /*margin: 5px 0 15px 0;*/
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+    color: #689f38;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    /*background: #cccccc;*/
+}
+
+.card-content {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fafafa;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.card .details {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    padding: 7px 10px 0;
+    position: relative;
+}
+
+.cover {
+    height: 160px;
+    width: 160px;
+    /*border: 1px solid;*/
+}
+
+.cover-image-container {
+    height: 110%;
+    left: -5%;
+    position: relative;
+    top: -5%;
+    width: 110%;
+}
+
+.card-content-1 {
+    float: left;
+}
+
+.card-desc {
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+    width: 300px;
+}
+
+.info-app{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+

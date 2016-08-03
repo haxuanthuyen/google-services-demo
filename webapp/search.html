@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search file apk</title>
+    <link rel="stylesheet" type="text/css" href="webapp/css/search-style.css" media="all">
+    <script src="webapp/js/jquery.js"></script>
+</head>
+<body>
+<div class="container-table">
+    <div class="div-search">
+        <input id="search-top" placeholder="Nhập app cần tìm" type="text" /> <div class="button" id="search-btn">Tìm</div>
+    </div>
+    <div style="margin-top: 5px;"></div>
+</div>
+<div class="container-apps">
+    <div class="cluster">
+        <!--<div class="card">-->
+        <!--<div class="card-content">-->
+        <!--<div class="card-content-1">-->
+        <!--<div class="cover">-->
+        <!--<div class="cover-image-container">-->
+        <!--<img alt="Skype" class="cover-image" data-cover-large="//lh5.ggpht.com/1CxNUEdzrREikWZoaHIU5J63x2gOxTb7R-ZIbJd51uPBFt0jUj8AX2bMOhKiIBcuAqtH=w340-rw" data-cover-small="//lh5.ggpht.com/1CxNUEdzrREikWZoaHIU5J63x2gOxTb7R-ZIbJd51uPBFt0jUj8AX2bMOhKiIBcuAqtH=w170-rw" src="//lh5.ggpht.com/1CxNUEdzrREikWZoaHIU5J63x2gOxTb7R-ZIbJd51uPBFt0jUj8AX2bMOhKiIBcuAqtH=w170-rw" aria-hidden="true">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="card-desc">-->
+        <!--<div class="info-app"><span>Tên package: </span></div>-->
+        <!--<div class="info-app"><span>Title: </span></div>-->
+        <!--<div class="info-app"><span>Lượt tải: </span></div>-->
+        <!--<div class="info-app"><span>Rating: </span></div>-->
+        <!--<div class="info-app"><span>Update: </span></div>-->
+        <!--<div class="info-app"><span>Chi tiết: </span></div>-->
+        <!--<div class="button" id="download-btn-3" style="float: right; margin: 2px">Tải apk</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<script>
+
+    var mappData = new Array();
+
+    $(document).ready(function(){
+        $('#search-btn').click(function(){
+            var text = $('#search-top').val();
+            loadJsonSearch(text);
+        });
+
+        function downloadApk(id) {
+            var link = "http://localhost:6677/download/?id=" + id;
+//            // Get file name from url.
+            var xhr = new XMLHttpRequest();
+            xhr.responseType = 'blob';
+            xhr.onload = function() {
+                var a = document.createElement('a');
+                a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
+                a.download = id.replaceAll('.', '_') + '.apk'; // Set the file name.
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                delete a;
+            };
+            xhr.open('GET', link, true);
+            xhr.send();
+        }
+
+        $('.cluster').on('click','div[id^=download-]',function(){
+            var id = $(this).attr('id');
+            var pkName = mappData[id];
+            var link = "http://localhost:6677/download/?id=" + pkName;
+            window.open(link, '_blank');
+//            downloadApk(pkName);
+        });
+    });
+
+    function loadJsonSearch(text) {
+        var link = "http://localhost:6677/search/?text=" + text;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var lstJson = JSON.parse(xmlhttp.responseText);
+                showJsonSearch(lstJson);
+            }
+        };
+        xmlhttp.open("GET", link, true);
+        xmlhttp.send();
+    }
+
+    function showJsonSearch(lstJson) {
+        $(".cluster").empty();
+        for(var i = 0; lstJson.length; i++) {
+            var apps = lstJson[i];
+            var nameId = apps.packageName;
+            mappData['download-' + i] = nameId;
+            var title = apps.title;
+            var linkImage = apps.linkImages;
+            var numDownload = apps.numDownload;
+            var starRating = apps.starRating;
+            var uploadDate = apps.uploadDate;
+            var shareUrl = apps.shareUrl;
+
+            var text='<div class="card">' +
+                    '<div class="card-content">' +
+                    '<div class="card-content-1">' +
+                    '<div class="cover">' +
+                    '<div class="cover-image-container">' +
+                    '<img alt="Skype" class="cover-image" data-cover-large="' + linkImage + '" data-cover-small="' + linkImage + '" src="' + linkImage + '" aria-hidden="true">' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="card-desc">' +
+                    '<div class="info-app"><span>Tên package: ' + nameId + '</span></div>' +
+                    '<div class="info-app"><span>Title: ' + title + '</span></div>' +
+                    '<div class="info-app"><span>Lượt tải: ' + numDownload + '</span></div>' +
+                    '<div class="info-app"><span>Rating: ' + starRating + '</span></div>' +
+                    '<div class="info-app"><span>Update: ' + uploadDate + '</span></div>' +
+                    '<div class="info-app"><span>Chi tiết: ' + shareUrl + '</span></div>' +
+//                    '<div class="button" id="download-' + pakageName + '" style="float: right; margin: 2px">Tải apk</div>' +
+                    '<div class="button" id="download-' + i + '" style="float: right; margin: 2px">Tải apk</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            $(".cluster").append(text);
+        }
+    }
+</script>
+</body>
+</html>
